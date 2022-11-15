@@ -1,0 +1,47 @@
+{
+  "name": "frontend_developer",
+  "version": "0.0.1",
+  "description": "Training in the profession of a frontend developer",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --config webpack.config/webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config/webpack.config.js",
+    "start": "cross-env NODE_ENV=development webpack serve --config webpack.config/webpack.config.js",
+    "test:lint": "eslint .",
+    "test": "npm run test:lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darthmorgot/frontend_developer"
+  },
+  "author": "Master",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darthmorgot/frontend_developer/issues"
+  },
+  "homepage": "https://github.com/darthmorgot/frontend_developer#readme",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@webdiscus/pug-loader": "^2.9.4",
+    "babel-loader": "^8.3.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.7",
+    "eslint": "^7.32.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^1.6.2",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^5.3.0",
+    "postcss-preset-env": "^6.7.1",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^3.11.3",
+    "webpack-merge": "^5.8.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
