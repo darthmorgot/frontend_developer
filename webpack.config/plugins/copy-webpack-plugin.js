@@ -5,10 +5,6 @@ const copyWebpackPlugin = () => {
   return new CopyWebpackPlugin({
     patterns: [
       {
-        from: path.src + '/assets/images',
-        to: 'images'
-      },
-      {
         from: path.src + '/static',
         to: ''
       }
