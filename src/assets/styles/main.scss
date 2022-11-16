@@ -1,13 +1,6 @@
-$mainFont: 'Rubik', Arial, sans-serif;
-$mainFontColor: #101010;
-$defaultColor: #ffffff;
-$mainSize: 16px;
-$desktopWidth: 1280px;
-
-@font-face {
-  font-family: $mainFont;
-  src: url('../fonts/rubik/rubik-400.woff2') format('woff2');
-}
+@import 'utils/vars';
+@import 'utils/fonts';
+@import 'utils/normalize';
 
 body {
   padding: 0;
