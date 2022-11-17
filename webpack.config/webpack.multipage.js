@@ -8,8 +8,8 @@ result.entry = {
 }
 
 result.pages = [
-  { chunks: ['main'], page: 'index.html', template: path.src + '/index.pug' },
-  { chunks: ['catalog'], page: 'catalog.html', template: path.src + '/catalog.pug' },
+  { chunks: ['main'], page: 'index.html', template: path.src + '/pages/index.pug' },
+  { chunks: ['catalog'], page: 'catalog.html', template: path.src + '/pages/catalog.pug' },
 ]
 
 module.exports = result;
