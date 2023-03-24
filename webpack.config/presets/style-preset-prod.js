@@ -1,10 +1,7 @@
-const {miniCssExtractLoader} = require('../plugins/mini-css-extract-plugin.js');
-
 const stylePresetProd = () => {
   return {
-    test: /\.(s[ac]ss|css)$/i,
+    test: /\.(css|sass|scss)/i,
     use: [
-      miniCssExtractLoader(),
       {
         loader: 'css-loader',
         options: {

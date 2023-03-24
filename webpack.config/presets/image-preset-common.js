@@ -1,9 +1,9 @@
-const imagePreset = () => {
+const imagePreset = (mode) => {
   return {
-    test: /\.(ico|gif|jpeg|jpg|png|svg)$/i,
+    test: /\.(png|svg|jpeg|jpg|gif|ico)$/i,
     type: 'asset/resource',
     generator: {
-      filename: 'assets/images/[name][ext]',
+      filename: mode ? 'assets/img/[name][ext]' : 'assets/img/[name].[hash:8][ext]',
     },
   };
 };

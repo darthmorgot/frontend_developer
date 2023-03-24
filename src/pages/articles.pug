@@ -1,0 +1,28 @@
+//- doctype html
+//- html
+//-   head
+//-     title Каталог
+//-   body(style="color: #000000;")
+//-     h1(style="font-size: 24px;") Каталог
+//-     a(href="index.html") На главную
+//-     p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptatem rem molestias totam sequi quae harum, corporis perspiciatis. Nobis consectetur consequuntur eveniet quis explicabo voluptas perferendis nesciunt asperiores commodi, nulla!
+//-     img(src=require('../assets/images/idea.png') width="200")
+
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Articles page
+    link(rel="icon" href=require('Images/favicon.ico'))
+    link(href=require('../styles/articles.scss') rel='stylesheet')
+  body
+    h1(class="page-header") Articles page
+    section(class="articles")
+      a(href="articles/article1.html" class="article-link") Article 1
+      a(href="articles/article2.html" class="article-link") Article 2
+      a(href="articles/article3.html" class="article-link") Article 3
+      a(href="articles/article4.html" class="article-link") Article 4
+      a(href="articles/article5.html" class="article-link") Article 5
+    a(href="../index.html") Home
+    div(id="user-block")
+    script(src=require('../articles.js'))

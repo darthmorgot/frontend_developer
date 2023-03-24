@@ -1,8 +1,9 @@
+const PugPlugin = require('pug-plugin');
+
 const htmlPreset = () => {
   return {
     test: /\.pug$/,
-    // loader: '@webdiscus/pug-loader',
-    loader: 'pug-loader',
+    loader: PugPlugin.loader,
   };
 };
 

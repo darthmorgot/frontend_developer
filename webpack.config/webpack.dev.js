@@ -1,23 +1,22 @@
-const pathapp = require('path');
-
 const path = require('./paths.js');
-const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
   devtool: 'eval-cheap-module-source-map',
   devServer: {
-    host: 'localhost',
     port: 8080,
-    open: 'chrome',
-    historyApiFallback: true,
     static: {
-      directory: pathapp.resolve(__dirname, '../dist'),
+      directory: path.build,
     },
-    // contentBase: path.build,
+    hot: true,
+    open: {
+      app: {
+        name: 'chrome',
+      }
+    },
+    watchFiles: ['src/**/*'],
+    historyApiFallback: true,
     compress: true,
-    hot: true
   },
   cache: true,
-  plugins: [new webpack.HotModuleReplacementPlugin()]
 };

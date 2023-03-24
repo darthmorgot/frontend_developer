@@ -1,0 +1,38 @@
+//- doctype html
+//- html
+//-   head
+//-     title Device
+//-   body
+//-     header(class="header")
+//-       div(class="header-top header__top")
+//-         a(class="logo header__logo")
+//-           img(src="" alt="Логотип интернет-магазина Девайс")
+//-       div(class="header-main header__main")
+//-         form(class="form-search header__form-search" action="https://echo.htmlacademy.ru" method="post")
+//-           input(class="form-search__input" type="text" name="search" placeholder="Текст поиска")
+//-           button(class="form-search__btn"  type="submit")
+//-             span(class="visually-hidden") Искать
+//-       div(class="nav header__nav")
+//-         h1 Device test
+//-     main(class="main")
+//-     footer(class="footer")
+
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Webpack simple project
+    link(rel="icon" href=require('Images/favicon.ico'))
+    link(href=require('./styles/all.scss') rel='stylesheet')
+  body
+    h1(class="page-header") Пример конфигурации webpack для проекта
+    div(class="all-links")
+      a(href="pages/articles.html") Articles
+    div(id="content")
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, cum nesciunt qui quae. Cupiditate, non possimus eligendi voluptatum odit ea. Numquam inventore, illum impedit veniam officiis esse! Quibusdam deserunt voluptatum quasi atque ipsa eos expedita, odio et quia libero molestias in maxime ab aut reiciendis cupiditate! Laudantium, ad? Saepe, natus.
+    p(class="test") Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Эта речью там бросил меня свою однажды дороге первую пор правилами, текстов последний залетают сих грустный, сбить, которой имени себя имеет ведущими жизни за выйти. Скатился, заглавных это! Послушавшись реторический, она не, назад, переписывается своих страна несколько знаках правилами от всех там дал образ. Рукопись подпоясал свой приставка сих повстречался, его? Грустный заманивший последний послушавшись диких, текста взгляд маленький дал, семантика коварный маленькая скатился грамматики единственное проектах моей несколько приставка бросил сбить, ведущими пустился назад буквоград. Напоивший речью то о одна семь даже наш свою составитель буквенных текст? Семь переписали, рекламных!
+    p(class="lorem") Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, debitis.
+    p(class="lorem") Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, debitis.
+    div(class="image-block")
+      img(src=require('Images/Latte.jpg') alt="Picture on coffee")
+    script(src=require('./main.js'))

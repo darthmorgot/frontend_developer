@@ -1,14 +1,16 @@
 const path = require('./paths.js');
+const multipage = require('./webpack.multipage.js');
 
-const htmlWebpackPlugin = require('./plugins/html-webpack-plugin.js');
-const copyWebpackPlugin = require('./plugins/copy-webpack-plugin.js');
+const pugPlugin = require('./plugins/pug-plugin-plugin.js');
 
 const htmlPreset = require('./presets/html-preset-common.js');
-const scriptPreset = require('./presets/script-preset-common.js');
 const stylePreset = require('./presets/style-preset-common.js');
+const stylePresetProd = require('./presets/style-preset-prod.js');
+const scriptPreset = require('./presets/script-preset-common.js');
 const imagePreset = require('./presets/image-preset-common.js');
 const fontPreset = require('./presets/font-preset-common.js');
-const multipage = require('./webpack.multipage.js');
+
+const devMode = process.env.BUILD_TYPE !== "production";
 
 module.exports = {
   entry: {
@@ -16,26 +18,25 @@ module.exports = {
   },
   output: {
     path: path.build,
-    filename: '[name].js',
-    publicPath: './',
+    publicPath: '/',
     clean: true
   },
+  resolve: {
+    alias: {
+      Images: path.src + '/images/',
+      Fonts: path.src + '/fonts/',
+    }
+  },
   plugins: [
-    ...htmlWebpackPlugin,
-    copyWebpackPlugin()
+    pugPlugin(devMode),
   ],
   module: {
     rules: [
       htmlPreset(),
+      devMode ? stylePreset() : stylePresetProd(),
       scriptPreset(),
-      stylePreset(),
-      imagePreset(),
-      fontPreset()
+      imagePreset(devMode),
+      fontPreset(devMode),
     ]
   },
-  optimization: {
-    splitChunks: {
-      chunks: 'all'
-    }
-  }
 };
