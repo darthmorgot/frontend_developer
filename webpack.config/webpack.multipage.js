@@ -2,7 +2,7 @@ result = {};
 
 result.entry = {
   pageIndex: './src/index.pug',
-  pageUsers: './src/pages/articles.pug',
+  pageCatalog: './src/pages/catalog.pug',
 };
 
 module.exports = result;
