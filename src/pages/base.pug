@@ -1,0 +1,14 @@
+block variables
+
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title #{title}
+    link(rel="icon" href=require('Images/favicon.ico'))
+    link(href=require('../styles/all.scss') rel='stylesheet')
+  body
+    include includes/header
+    block content
+    include includes/footer
+    script(src=require(linkScripts))
