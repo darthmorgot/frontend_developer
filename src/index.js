@@ -1,2 +1,2 @@
-console.log('Test console log');
+console.log('Test home page');
 console.log(`2 * 4 = ${2 * 4}`);
