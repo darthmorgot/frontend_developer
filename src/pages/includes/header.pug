@@ -1,11 +1,32 @@
-header(class="header")
-  div(class="header-top header__top")
-    a(class="logo header__logo")
+header.header
+  div.header-top.header__top
+    a.logo.header__logo
       img(src="" alt="Логотип интернет-магазина Девайс")
-  div(class="header-main header__main")
-    form(class="form-search header__form-search" action="https://echo.htmlacademy.ru" method="post")
-      input(class="form-search__input" type="text" name="search" placeholder="Текст поиска")
-      button(class="form-search__btn"  type="submit")
-        span(class="visually-hidden") Искать
-  div(class="nav header__nav")
-    a(href="catalog.html") Catalog
+  div.header-main.header__main
+    form.form-search.header__form-search(action="https://echo.htmlacademy.ru" method="post")
+      input.form-search__input(type="text" name="search" placeholder="Текст поиска")
+      button.form-search__btn(type="submit") Найти
+    div.login
+      a(href="#") Войти
+    div.header-main__menu
+      a.header-main__link(href="#") Сравнить
+      a.header-main__link(href="#") Корзина
+  div.nav.header__nav
+    div.nav__catalog
+      ul.nav__list
+        li.nav__item
+          a(href="pages/catalog.html") Виртуальная реальность
+        li.nav__item
+          a(href="#") Моноподы для селфи
+        li.nav__item
+          a(href="#") Экшен-камеры
+        li.nav__item
+          a(href="#") Фитнес-браслеты
+        li.nav__item
+          a(href="#") Умные часы
+        li.nav__item
+          a(href="#") Квадрокоптеры
+    div.nav__menu
+      a(href="#") Доставка
+      a(href="#") Гарантия
+      a(href="#") Контакты
