@@ -1,7 +1,7 @@
 result = {};
 
 result.entry = {
-  pageIndex: './src/pages/index.pug',
+  pageIndex: './src/index.pug',
   pageCatalog: './src/pages/catalog.pug',
 };
 
