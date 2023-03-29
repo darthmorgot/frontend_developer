@@ -7,7 +7,11 @@ const keepPugFolderStructure = (pathData) => {
   const sourceFile = pathData.filename;
   const relativeFile = pathApp.relative(path.src, sourceFile);
   const { dir, name } = pathApp.parse(relativeFile);
-  return `${dir}/${name}.html`;
+  if (name == 'index') {
+    return `${name}.html`;
+  } else {
+    return `${dir}/${name}.html`;
+  }
 };
 
 const pugPlugin = (mode) => {
