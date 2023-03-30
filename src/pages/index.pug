@@ -9,6 +9,60 @@ block content
     h1 Device
     section.slider.main__slider
       h2 Slider
+      div.slider__item.slider__item--active
+        div.slider__left
+          img(src=require('../images/slider-1.png') width="560" height="560" alt="Слайд Квадрокоптер")
+        div.slider__right
+          p Порхает как бабочка, жалит как пчела!
+          p Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+          a(href="#") Подробнее
+          table
+            tr
+              td 800 м
+              td 50 м
+            tr
+              th Дальность полета
+              th Радиус поражения
+      div.slider__item
+        div.slider__left
+          img(src=require('../images/slider-2.png') width="560" height="560" alt="Слайд Фитнес-браслет")
+        div.slider__right
+          p Худеем правильно!
+          p Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+          a(href="#") Подробнее
+          table
+            tr
+              td 48 часов
+            tr
+              th Без подзарядки
+      div.slider__item
+        div.slider__left
+          img(src=require('../images/slider-3.png') width="560" height="560" alt="Слайд Палка для селфи")
+        div.slider__right
+          p Делай селфи, как Бен Стиллер!
+          p Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+          a(href="#") Подробнее
+          table
+            tr
+              td 8,5 м
+              td 5 кг
+              td Карбон
+            tr
+              th Длина палки
+              th Вес палки
+              th Материал
+      div.slider__arrows
+        button.slider__arrow.slider__arrow-prev(type="button")
+          span.visually-hidden Назад
+        button.slider__arrow.slider__arrow-next(type="button")
+          span.visually-hidden Вперед
+      div.slider__dots
+        button.slider__dot.slider__dot--active.num_0(type="button")
+          span.visually-hidden Слайд 1
+        button.slider__dot.num_1(type="button")
+          span.visually-hidden Слайд 2
+        button.slider__dot.num_2(type="button")
+          span.visually-hidden Слайд 3
     section.categories.main__categories
       h2 Categories
     section.services.main__services
