@@ -65,8 +65,48 @@ block content
           span.visually-hidden Слайд 3
     section.categories.main__categories
       h2 Categories
+      ul.categories__list
+        li.categories__item
+          a.categories__link(href="#")
+            img(src=require('../images/category-1.png') width="" height="" alt="Категория Виртуальная реальность")
+            h3 Виртуальная реальность
+        li.categories__item
+          a.categories__link(href="#")
+            img(src=require('../images/category-2.png') width="" height="" alt="Категория Моноподы для селфи")
+            h3 Моноподы для селфи
+        li.categories__item
+          a.categories__link(href="#")
+            img(src=require('../images/category-3.png') width="" height="" alt="Категория Экшн-камеры")
+            h3 Экшн-камеры
+        li.categories__item
+          a.categories__link(href="#")
+            img(src=require('../images/category-4.png') width="" height="" alt="Категория Фитнес-браслеты")
+            h3 Фитнес-браслеты
+        li.categories__item
+          a.categories__link(href="#")
+            img(src=require('../images/category-5.png') width="" height="" alt="Категория Умные часы")
+            h3 Умные часы
+        li.categories__item
+          a.categories__link(href="#")
+            img(src=require('../images/category-6.png') width="" height="" alt="Категория Квадрокоптеры")
+            h3 Квадрокоптеры
     section.services.main__services
       h2 Services
+      div.services__tabs.tabs
+        div.tabs__panel
+          button.tabs__switch.tabs__switch--active(type="button" data-tab="tabs__item--delivery") Доставка
+          button.tabs__switch(type="button" data-tab="tabs__item--warranty") Гарантия
+          button.tabs__switch(type="button" data-tab="tabs__item--credit") Кредит
+        div.tabs__wrapper
+          div.tabs__item.tabs__item--delivery.tabs__item--active
+            h3 Доставка
+            p Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+          div.tabs__item.tabs__item--warranty
+            h3 Гарантия
+            p Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+          div.tabs__item.tabs__item--credit
+            h3 Кредит
+            p Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
     section.delivery-order.main__delivery-order
       h2 Delivery order
     section.info.main__info
