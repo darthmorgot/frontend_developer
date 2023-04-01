@@ -8,7 +8,7 @@ block content
   main.main
     h1 Device
     section.slider.main__slider
-      h2 Slider
+      h2 Слайдер
       div.slider__item.slider__item--active
         div.slider__left
           img(src=require('../images/slider-1.png') width="560" height="560" alt="Слайд Квадрокоптер")
@@ -64,7 +64,7 @@ block content
         button.slider__dot.num_2(type="button")
           span.visually-hidden Слайд 3
     section.categories.main__categories
-      h2 Categories
+      h2 Категории товаров
       ul.categories__list
         li.categories__item
           a.categories__link(href="#")
@@ -91,7 +91,7 @@ block content
             img(src=require('../images/category-6.png') width="" height="" alt="Категория Квадрокоптеры")
             h3 Квадрокоптеры
     section.services.main__services
-      h2 Services
+      h2 Сервисы
       div.services__tabs.tabs
         div.tabs__panel
           button.tabs__switch.tabs__switch--active(type="button" data-tab="tabs__item--delivery") Доставка
@@ -108,8 +108,27 @@ block content
             h3 Кредит
             p Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
     section.delivery-order.main__delivery-order
-      h2 Delivery order
-    section.info.main__info
-      h2 Info Contacts
+      h2 Доставка редких товаров
+      a.delivery-order__link(href="#") Доставим редкий товар под заказ
+    div.info.main__info
+      h2 О нас Контакты
+      section.main__about-us.about-us
+        h2 О нас
+        p Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+        p Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
+        ul.about-us__list
+          li Меловые линии
+          li СДИК
+          li ТоксБерри
+        a.about-us__btn.button(href="#") Подробнее о нас
+      section.main__contacts.contacts
+        h2 Контакты
+        p Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.
+        span Интернет-магазин «Девайс»
+        address Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        span +7 (812) 812-12-12
+        span Время работы
+        span пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00
+        a.contacts__btn.button(href="#") Напишите нам
     section.subscribe.main__subscribe
-      h2 Subscribe to the newsletter
+      h2 Подписка на рассылку
