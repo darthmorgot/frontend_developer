@@ -71,7 +71,7 @@ block content
             img(src=require('../images/category-1.png') width="" height="" alt="Категория Виртуальная реальность")
             h3 Виртуальная реальность
         li.categories__item
-          a.categories__link(href="#")
+          a.categories__link(href="pages/catalog.html")
             img(src=require('../images/category-2.png') width="" height="" alt="Категория Моноподы для селфи")
             h3 Моноподы для селфи
         li.categories__item
@@ -111,7 +111,6 @@ block content
       h2 Доставка редких товаров
       a.delivery-order__link(href="#") Доставим редкий товар под заказ
     div.info.main__info
-      h2 О нас Контакты
       section.main__about-us.about-us
         h2 О нас
         p Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -131,4 +130,11 @@ block content
         span пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00
         a.contacts__btn.button(href="#") Напишите нам
     section.subscribe.main__subscribe
-      h2 Подписка на рассылку
+      h2.subscribe__title Подпишитесь на рассылку
+      p.subscribe__description Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+      form.subscribe__form(action="https://echo.htmlacademy.ru/" method="post")
+        label.subscribe__field.field
+          span.visually-hidden Ваш e-mail
+          input.field__input(type="email" name="email" placeholder="Ваш e-mail")
+        button.subscribe__btn.button(type="submit") Подписаться
+        span Это бесплатно
