@@ -1,0 +1,25 @@
+section.modal-delivery
+  div.modal-delivery__title
+    h2 Доставка под заказ
+  button.modal-delivery__close(type="button")
+    span.visually-hidden Закрыть
+  form.modal-delivery__form.form-order(action="https://echo.htmlacademy.ru" method="post")
+    div.form-order__wrapper
+      p
+        label Ваше имя:
+          input.form-order__input(type="text" name="name" placeholder="Введите имя")
+          span.form-order__error Добавьте имя
+        label Ваш e-mail:
+          input.form-order__input(type="email" name="email" placeholder="почта")
+          span.form-order__error Забавный у вас адрес
+      p
+        label Что нужно привезти:
+          textarea.form-order__message(name="message" placeholder="В свободной форме")
+        label Количество:
+          span.form-order__info(data-info="Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.") i
+          span -
+          input.form-order__input(type="email" name="number" value="1")
+          span +
+    </div>
+    div.form-order__submit
+      button.form-order__btn.btn(type="submit") Отправить
