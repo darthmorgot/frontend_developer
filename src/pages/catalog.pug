@@ -1,12 +1,13 @@
 extends base
 
 block variables
-  - var title = 'Catalog'
+  - var title = 'Каталог'
   - var linkScripts = '../catalog.js'
+  - var namePage = 'Catalog'
 
 block content
-  main
-    h1(style="font-size: 24px;") Каталог
-    a(href="../index.html") На главную
-    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptatem rem molestias totam sequi quae harum, corporis perspiciatis. Nobis consectetur consequuntur eveniet quis explicabo voluptas perferendis nesciunt asperiores commodi, nulla!
-    img(src=require('../images/Latte.jpg') width="200")
+  main.main
+    h2.main__title Моноподы для селфи
+
+block modal
+  include includes/popup-cart
