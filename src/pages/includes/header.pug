@@ -1,13 +1,17 @@
 header.header
   div.header-top.header__top
-    a.logo.header__logo
-      img(src="" alt="Логотип интернет-магазина Девайс")
+    case namePage
+        when 'Home': a.logo.header__logo: img(src="" alt="Логотип интернет-магазина Девайс")
+        when 'Catalog': a.logo.header__logo(href="../index.html"): img(src="" alt="Логотип интернет-магазина Девайс")
   div.header-main.header__main
     form.form-search.header__form-search(action="https://echo.htmlacademy.ru" method="post")
       input.form-search__input(type="text" name="search" placeholder="Текст поиска")
       button.form-search__btn(type="submit") Найти
-    div.login
-      a(href="#") Войти
+    div.header-main__user
+      span.header-main__icon
+      case namePage
+        when 'Home': +auth-list("Войти")
+        when 'Catalog': +auth-list("Коля Петухов", "Выйти")
     div.header-main__menu
       a.header-main__link(href="#") Сравнить
       a.header-main__link(href="#") Корзина
