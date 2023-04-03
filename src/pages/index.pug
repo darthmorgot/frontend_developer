@@ -1,8 +1,9 @@
 extends base
 
 block variables
-  - var title = 'Home'
+  - var title = 'Главная страница'
   - var linkScripts = '../index.js'
+  - var namePage = 'Home'
 
 block content
   main.main
@@ -138,3 +139,7 @@ block content
           input.field__input(type="email" name="email" placeholder="Ваш e-mail")
         button.subscribe__btn.button(type="submit") Подписаться
         span Это бесплатно
+
+block modal
+  include includes/popup-cart
+  include includes/modal-delivery
