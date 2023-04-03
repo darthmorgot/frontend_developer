@@ -1,3 +1,4 @@
+include utils/mixins
 block variables
 
 doctype html
@@ -11,6 +12,5 @@ html
     include includes/header
     block content
     include includes/footer
-    include includes/popup-cart
-    include includes/modal-delivery
+    block modal
     script(src=require(linkScripts))
