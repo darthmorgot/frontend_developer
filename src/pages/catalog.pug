@@ -7,7 +7,116 @@ block variables
 
 block content
   main.main
-    h2.main__title Моноподы для селфи
+    div.container
+      h2.main__title Моноподы для селфи
+      ul.main__breadcrumbs.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link.breadcrumbs__link--home(href="../index.html")
+            span.visually-hidden Главная
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="catalog.html") Каталог товаров
+        li.breadcrumbs__item
+          a.breadcrumbs__link.breadcrumbs__link--current Моноподы для селфи
+
+      div.main__catalog.catalog
+        section.catalog__filter.filter
+          h2.filter__header Фильтр:
+          form.filter__form(action="https://echo.htmlacademy.ru" method="get")
+            fieldset.filter__price
+              legend Стоимость:
+              div.filter__range
+                span.visually-hidden Шкала цен с двумя ползунками
+                div.filter__scale
+                  span.filter__bar
+                div.filter__control.filter__control--min(tabindex="0")
+                  span.visually-hidden Ползунок минимума
+                div.filter__control.filter__control--max(tabindex="0")
+                  span.visually-hidden Ползунок максимума
+              div.filter__output
+                label.visually-hidden Нижняя цена
+                  input.filter__input(type="text" name="price_lower" value="0")
+                span.filter__separator —
+                label.visually-hidden Верхняя цена
+                  input.filter__input(type="text" name="price_upper" value="5000")
+            fieldset.filter__color
+              legend Цвет:
+              ul.filter__color-list
+                li.filter__color-item
+                  input#filter-black.visually-hidden(type="checkbox" name="black" checked="")
+                  label(for="filter-black") Черный
+                li.filter__color-item
+                  input#filter-white.visually-hidden(type="checkbox" name="white" checked="")
+                  label(for="filter-white") Белый
+                li.filter__color-item
+                  input#filter-blue.visually-hidden(type="checkbox" name="blue")
+                  label(for="filter-blue") Синий
+                li.filter__color-item
+                  input#filter-red.visually-hidden(type="checkbox" name="red")
+                  label(for="filter-red") Красный
+                li.filter__color-item
+                  input#filter-pink.visually-hidden(type="checkbox" name="pink")
+                  label(for="filter-pink") Розовый
+            fieldset.filter__bluetooth
+              legend Bluetooth:
+              ul.filter__bluetooth-list
+                li.filter__bluetooth-item
+                  input#filter-yes.visually-hidden(type="radio" name="bluetooth" value="yes" checked="")
+                  label(for="filter-yes") Есть
+                li.filter__bluetooth-item
+                  input#filter-no.visually-hidden(type="radio" name="bluetooth" value="no")
+                  label(for="filter-no") Нет
+            button.filter__btn(type="submit") Показать
+
+        section.catalog__products.products
+          h2.visually-hidden Список товаров
+          div.products__sort
+            span Сортировка:
+            ul.products__sort-list
+              li.products__sort-item.active
+                a(href="#") Популярные
+            div.products__sort-arrows
+              button.products__sort-btn(type="button")
+                span.visually-hidden По возрастанию
+                svg(xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10")
+                  path(fill="#c5c5c5" d="M5.5 0L0 10h11z")
+              button.products__sort-btn(type="button")
+                span.visually-hidden По убыванию
+                svg(xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10")
+                  path(fill="#c5c5c5" d="M5.5 10L0 0h11")
+          ul.products__list
+            li.products__item.product.new
+              img(src="" width="218" height="170" alt="Карточка товара Любительская селфи-палка")
+              h3.product__title Любительская селфи-палка
+              span.product__price 500 &#8381;
+              a.button.product__btn.product__btn--detailed(href="#") Подробнее
+            li.products__item.product
+              img(src="" width="218" height="170" alt="Карточка товара Профессиональная селфи-палка")
+              h3.product__title Профессиональная селфи-палка
+              span.product__price 1500 &#8381;
+              a.button.product__btn.product__btn--detailed(href="#") Подробнее
+            li.products__item.product.new
+              img(src="" width="218" height="170" alt="Карточка товара Непотопляемая селфи-палка")
+              h3.product__title Непотопляемая селфи-палка
+              span.product__price 2500 &#8381;
+              a.button.product__btn.product__btn--detailed(href="#") Подробнее
+            li.products__item.product.new
+              img(src="" width="218" height="170" alt="Карточка товара Селфи-палка «Следуй за мной»")
+              h3.product__title Селфи-палка «Следуй за мной»
+              span.product__price 1500 &#8381;
+              a.button.product__btn.product__btn--detailed(href="#") Подробнее
+          div.products__button
+            button(type="button") Загрузить еще
+          ul.catalog__pagination.pagination
+            li.pagination__item
+              a(href="#") Вперед
+            li.pagination__item.current
+              a 1
+            li.pagination__item
+              a(href="#") 2
+            li.pagination__item
+              a(href="#") 3
+            li.pagination__item
+              a(href="#") Назад
 
 block modal
   include includes/popup-cart
