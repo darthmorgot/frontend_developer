@@ -1,9 +1,10 @@
 header.header
-  div.header-top.header__top
+  div.header__top.header-top
     case namePage
-        when 'Home': a.logo.header__logo: img(src="" alt="Логотип интернет-магазина Девайс")
-        when 'Catalog': a.logo.header__logo(href="../index.html"): img(src="" alt="Логотип интернет-магазина Девайс")
-  div.header-main.header__main
+        when 'Home': a.logo.header__logo: img(src="" alt="Логотип интернет-магазина Девайс.")
+        when 'Catalog': a.logo.header__logo(href="../index.html"): img(src="" alt="Логотип интернет-магазина Девайс.")
+
+  div.header__main.header-main
     form.form-search.header__form-search(action="https://echo.htmlacademy.ru" method="post")
       input.form-search__input(type="text" name="search" placeholder="Текст поиска")
       button.form-search__btn(type="submit") Найти
@@ -16,7 +17,8 @@ header.header
       a.header-main__link(href="#") Сравнить
       a.header-main__link(href="#") Корзина
         span 2
-  div.nav.header__nav
+
+  div.header__nav.nav
     div.nav__catalog
       ul.nav__list
         li.nav__item

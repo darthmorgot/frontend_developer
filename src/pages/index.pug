@@ -7,12 +7,13 @@ block variables
 
 block content
   main.main
-    h1 Device
-    section.slider.main__slider
-      h2 Слайдер
+    h1.visually-hidden Интернет-магазин Device
+
+    section.main__slider.slider
+      h2.visually-hidden Слайдер
       div.slider__item.slider__item--active
         div.slider__left
-          img(src=require('../images/slider-1.png') width="560" height="560" alt="Слайд Квадрокоптер")
+          img(src=require('../images/slider-1.png') width="560" height="560" alt="Слайд Квадрокоптер.")
         div.slider__right
           p Порхает как бабочка, жалит как пчела!
           p Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
@@ -26,7 +27,7 @@ block content
               th Радиус поражения
       div.slider__item
         div.slider__left
-          img(src=require('../images/slider-2.png') width="560" height="560" alt="Слайд Фитнес-браслет")
+          img(src=require('../images/slider-2.png') width="560" height="560" alt="Слайд Фитнес-браслет.")
         div.slider__right
           p Худеем правильно!
           p Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -38,7 +39,7 @@ block content
               th Без подзарядки
       div.slider__item
         div.slider__left
-          img(src=require('../images/slider-3.png') width="560" height="560" alt="Слайд Палка для селфи")
+          img(src=require('../images/slider-3.png') width="560" height="560" alt="Слайд Палка для селфи.")
         div.slider__right
           p Делай селфи, как Бен Стиллер!
           p Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
@@ -64,35 +65,37 @@ block content
           span.visually-hidden Слайд 2
         button.slider__dot.num_2(type="button")
           span.visually-hidden Слайд 3
-    section.categories.main__categories
-      h2 Категории товаров
+
+    section.main__categories.categories
+      h2.visually-hidden Категории товаров
       ul.categories__list
         li.categories__item
           a.categories__link(href="#")
-            img(src=require('../images/category-1.png') width="" height="" alt="Категория Виртуальная реальность")
+            img(src=require('../images/category-1.png') width="" height="" alt="")
             h3 Виртуальная реальность
         li.categories__item
           a.categories__link(href="pages/catalog.html")
-            img(src=require('../images/category-2.png') width="" height="" alt="Категория Моноподы для селфи")
+            img(src=require('../images/category-2.png') width="" height="" alt="")
             h3 Моноподы для селфи
         li.categories__item
           a.categories__link(href="#")
-            img(src=require('../images/category-3.png') width="" height="" alt="Категория Экшн-камеры")
+            img(src=require('../images/category-3.png') width="" height="" alt="")
             h3 Экшн-камеры
         li.categories__item
           a.categories__link(href="#")
-            img(src=require('../images/category-4.png') width="" height="" alt="Категория Фитнес-браслеты")
+            img(src=require('../images/category-4.png') width="" height="" alt="")
             h3 Фитнес-браслеты
         li.categories__item
           a.categories__link(href="#")
-            img(src=require('../images/category-5.png') width="" height="" alt="Категория Умные часы")
+            img(src=require('../images/category-5.png') width="" height="" alt="")
             h3 Умные часы
         li.categories__item
           a.categories__link(href="#")
-            img(src=require('../images/category-6.png') width="" height="" alt="Категория Квадрокоптеры")
+            img(src=require('../images/category-6.png') width="" height="" alt="")
             h3 Квадрокоптеры
-    section.services.main__services
-      h2 Сервисы
+
+    section.main__services.services
+      h2.visually-hidden Сервисы
       div.services__tabs.tabs
         div.tabs__panel
           button.tabs__switch.tabs__switch--active(type="button" data-tab="tabs__item--delivery") Доставка
@@ -108,10 +111,12 @@ block content
           div.tabs__item.tabs__item--credit
             h3 Кредит
             p Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
-    section.delivery-order.main__delivery-order
-      h2 Доставка редких товаров
+
+    section.main__delivery-order.delivery-order
+      h2.visually-hidden Доставка редких товаров
       a.delivery-order__link(href="#") Доставим редкий товар под заказ
-    div.info.main__info
+
+    div.main__info.info
       section.main__about-us.about-us
         h2 О нас
         p Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -130,7 +135,8 @@ block content
         span Время работы
         span пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00
         a.contacts__btn.button(href="#") Напишите нам
-    section.subscribe.main__subscribe
+
+    section.main__subscribe.subscribe
       h2.subscribe__title Подпишитесь на рассылку
       p.subscribe__description Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
       form.subscribe__form(action="https://echo.htmlacademy.ru/" method="post")
