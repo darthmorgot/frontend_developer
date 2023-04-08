@@ -1,8 +1,8 @@
 header.header
   div.header__top.header-top
     case namePage
-        when 'Home': a.logo.header__logo: img(src="" alt="Логотип интернет-магазина Девайс.")
-        when 'Catalog': a.logo.header__logo(href="../index.html"): img(src="" alt="Логотип интернет-магазина Девайс.")
+        when 'Home': a.logo.header__logo: img(src=require('../../images/logo.svg') alt="Логотип интернет-магазина Девайс.")
+        when 'Catalog': a.logo.header__logo(href="../index.html"): img(src=require('../../images/logo.svg') alt="Логотип интернет-магазина Девайс.")
 
   div.header__main.header-main
     form.form-search.header__form-search(action="https://echo.htmlacademy.ru" method="post")
