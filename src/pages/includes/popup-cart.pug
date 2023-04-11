@@ -2,9 +2,15 @@ section.popup-cart
   h2.visually-hidden Товары в корзине
   ul.popup-cart__list.cart-list
     li.cart-list__item
-      a.cart-list__link(href="#") Product 1
+      img(src=require('../../images/product-1-small.jpg') width="39" height="43" alt="Карточка товара Любительская селфи-палка.")
+      a.cart-list__link(href="#") Любительская селфи-палка
+      button.cart-list__delete(type="button")
+        span.visually-hidden Удалить товар из корзины
     li.cart-list__item
-      a.cart-list__link(href="#") Product 2
+      img(src=require('../../images/product-2-small.jpg') width="39" height="43" alt="Карточка товара Профессиональная селфи-палка.")
+      a.cart-list__link(href="#") Профессиональная селфи-палка
+      button.cart-list__delete(type="button")
+        span.visually-hidden Удалить товар из корзины
   div.popup-cart__total
     p.popup-cart__number Товаров:&nbsp;
       span 2

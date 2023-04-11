@@ -42,10 +42,10 @@ block content
               legend Цвет:
               ul.filter__color-list
                 li.filter__color-item
-                  input#filter-black.visually-hidden(type="checkbox" name="black" checked="")
+                  input#filter-black.visually-hidden(type="checkbox" name="black" checked)
                   label(for="filter-black") Черный
                 li.filter__color-item
-                  input#filter-white.visually-hidden(type="checkbox" name="white" checked="")
+                  input#filter-white.visually-hidden(type="checkbox" name="white" checked)
                   label(for="filter-white") Белый
                 li.filter__color-item
                   input#filter-blue.visually-hidden(type="checkbox" name="blue")
@@ -60,7 +60,7 @@ block content
               legend Bluetooth:
               ul.filter__bluetooth-list
                 li.filter__bluetooth-item
-                  input#filter-yes.visually-hidden(type="radio" name="bluetooth" value="yes" checked="")
+                  input#filter-yes.visually-hidden(type="radio" name="bluetooth" value="yes" checked)
                   label(for="filter-yes") Есть
                 li.filter__bluetooth-item
                   input#filter-no.visually-hidden(type="radio" name="bluetooth" value="no")
@@ -85,22 +85,22 @@ block content
                   path(fill="#c5c5c5" d="M5.5 10L0 0h11")
           ul.products__list
             li.products__item.product.new
-              img(src="" width="218" height="170" alt="Карточка товара Любительская селфи-палка.")
+              img(src=require('../images/product-1.jpg') width="360" height="380" alt="Карточка товара Любительская селфи-палка.")
               h3.product__title Любительская селфи-палка
               span.product__price 500 &#8381;
               a.button.product__btn.product__btn--detailed(href="#") Подробнее
             li.products__item.product
-              img(src="" width="218" height="170" alt="Карточка товара Профессиональная селфи-палка.")
+              img(src=require('../images/product-2.jpg') width="360" height="380" alt="Карточка товара Профессиональная селфи-палка.")
               h3.product__title Профессиональная селфи-палка
               span.product__price 1500 &#8381;
               a.button.product__btn.product__btn--detailed(href="#") Подробнее
             li.products__item.product.new
-              img(src="" width="218" height="170" alt="Карточка товара Непотопляемая селфи-палка.")
+              img(src=require('../images/product-3.jpg') width="360" height="380" alt="Карточка товара Непотопляемая селфи-палка.")
               h3.product__title Непотопляемая селфи-палка
               span.product__price 2500 &#8381;
               a.button.product__btn.product__btn--detailed(href="#") Подробнее
             li.products__item.product.new
-              img(src="" width="218" height="170" alt="Карточка товара Селфи-палка «Следуй за мной».")
+              img(src=require('../images/product-4.jpg') width="360" height="380" alt="Карточка товара Селфи-палка «Следуй за мной».")
               h3.product__title Селфи-палка «Следуй за мной»
               span.product__price 1500 &#8381;
               a.button.product__btn.product__btn--detailed(href="#") Подробнее
