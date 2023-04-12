@@ -10,7 +10,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Rubik", Arial, sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -55,6 +55,12 @@ img {
   }
 }
 
+.logo {
+  display: block;
+  width: 145px;
+  height: 36px;
+}
+
 .header-main {
   &__user {
     display: flex;
@@ -67,6 +73,19 @@ img {
     background-image: url('Images/icon-login.svg');
   }
 
+  &__auth {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
   &__link--icon::before {
     content: "";
     display: inline-block;
@@ -74,18 +93,47 @@ img {
     height: 21px;
     background: url('Images/icon-cart.svg') no-repeat center center;
   }
+
+  & span {
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
 
-.auth-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+.nav {
+  &__btn {
+    width: 293px;
+    height: 50px;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+  }
 
-.logo {
-  display: block;
-  width: 145px;
-  height: 36px;
+  &__btn--open {
+    background: url('Images/icon-plus-ellipse.svg') no-repeat right bottom;
+  }
+
+  &__btn--close {
+    background: url('Images/icon-minus-ellipse.svg') no-repeat right bottom;
+  }
+
+  &__list {
+    line-height: 1.125;
+  }
+
+  &__services {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+  }
 }
 
 // index main
