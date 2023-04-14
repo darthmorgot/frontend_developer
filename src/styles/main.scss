@@ -39,6 +39,15 @@ img {
 //   overflow: hidden;
 // }
 
+.font-raleway {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+}
+
 // header
 .header {
   width: 1160px;
@@ -104,12 +113,6 @@ img {
   &__btn {
     width: 293px;
     height: 50px;
-    font-family: "Raleway", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.16;
-    text-transform: uppercase;
     border: none;
     cursor: pointer;
   }
@@ -126,14 +129,7 @@ img {
     line-height: 1.125;
   }
 
-  &__services {
-    font-family: "Raleway", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.16;
-    text-transform: uppercase;
-  }
+  &__services {}
 }
 
 // index main
