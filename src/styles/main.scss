@@ -16,11 +16,16 @@ body {
   font-size: 16px;
   line-height: 1.25;
   background: $white;
+  color: $black;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 // .visually-hidden:not(:focus):not(:active),
@@ -79,7 +84,7 @@ img {
     display: inline-block;
     width: 14px;
     height: 13px;
-    background-image: url('Images/icon-login.svg');
+    background-image: url('Images/icons/icon-login.svg');
   }
 
   &__auth {
@@ -93,6 +98,7 @@ img {
   &__link {
     font-size: 18px;
     line-height: 1.67;
+    color: $black;
   }
 
   &__link--icon::before {
@@ -100,12 +106,18 @@ img {
     display: inline-block;
     width: 13px;
     height: 21px;
-    background: url('Images/icon-cart.svg') no-repeat center center;
+    background: url('Images/icons/icon-cart.svg') no-repeat center center;
   }
 
   & span {
     font-size: 14px;
     line-height: 1.21;
+  }
+}
+
+.auth-list {
+  &__item a {
+    color: $black;
   }
 }
 
@@ -118,21 +130,44 @@ img {
   }
 
   &__btn--open {
-    background: url('Images/icon-plus-ellipse.svg') no-repeat right bottom;
+    background: url('Images/icons/icon-plus-ellipse.svg') no-repeat right bottom;
   }
 
   &__btn--close {
-    background: url('Images/icon-minus-ellipse.svg') no-repeat right bottom;
+    background: url('Images/icons/icon-minus-ellipse.svg') no-repeat right bottom;
   }
 
   &__list {
     line-height: 1.125;
+    list-style: none;
   }
 
-  &__services {}
+  &__item a {
+    color: $black;
+  }
+
+  &__services a {
+    color: $black;
+  }
 }
 
 // index main
+.main {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.slider {
+  &__item {
+    display: flex;
+    background-image: linear-gradient(to bottom, $yellow 149px, $white 40px);
+  }
+
+  &__right {
+    width: 560px;
+  }
+}
+
 .tabs {
   &__switch--active {
     color: $yellow;
@@ -165,7 +200,7 @@ img {
   content: "";
   width: 125px;
   height: 100px;
-  background: url('Images/icon-delivery.svg') no-repeat center center;
+  background: url('Images/icons/icon-delivery.svg') no-repeat center center;
   background-color: $yellow;
 }
 
@@ -176,7 +211,7 @@ img {
   position: relative;
   top: 30px;
   right: 42px;
-  background: url('Images/icon-i.svg') no-repeat center center;
+  background: url('Images/icons/icon-i.svg') no-repeat center center;
   background-color: $grey;
   opacity: 50%;
   border-radius: 50%;
@@ -188,7 +223,7 @@ img {
     display: inline-block;
     width: 84px;
     height: 7px;
-    background: url('Images/icon-divider.svg') no-repeat center center;
+    background: url('Images/icons/icon-divider.svg') no-repeat center center;
   }
 
   &__list {
@@ -202,7 +237,7 @@ img {
     display: inline-block;
     width: 84px;
     height: 7px;
-    background: url('Images/icon-divider.svg') no-repeat center center;
+    background: url('Images/icons/icon-divider.svg') no-repeat center center;
   }
 }
 
@@ -212,7 +247,7 @@ img {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: url('Images/icon-tick-green.svg') no-repeat center center;
+    background: url('Images/icons/icon-tick-green.svg') no-repeat center center;
   }
 }
 
@@ -261,7 +296,7 @@ img {
   display: inline-block;
   width: 80px;
   height: 7px;
-  background: url('Images/icon-divider-yellow.svg') no-repeat center center;
+  background: url('Images/icons/icon-divider-yellow.svg') no-repeat center center;
 }
 
 .social {
@@ -269,14 +304,14 @@ img {
   list-style: none;
 
   &__link--fb {
-    background: url('Images/icon-facebook.svg') no-repeat center center;
+    background: url('Images/icons/icon-facebook.svg') no-repeat center center;
   }
 
   &__link--insta {
-    background: url('Images/icon-instagram.svg') no-repeat center center;
+    background: url('Images/icons/icon-instagram.svg') no-repeat center center;
   }
 
   &__link--twitter {
-    background: url('Images/icon-twitter.svg') no-repeat center center;
+    background: url('Images/icons/icon-twitter.svg') no-repeat center center;
   }
 }
