@@ -166,6 +166,40 @@ a {
   &__right {
     width: 560px;
   }
+
+  &__right span {
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 0.167;
+    color: $white;
+  }
+
+  &__slogan {
+    font-size: 50px;
+    line-height: 1;
+    text-transform: none;
+  }
+
+  &__desc {
+    font-size: 18px;
+    line-height: 1.167;
+    color: $dark;
+  }
+
+  &__right a {
+    color: $black;
+  }
+
+  &__features td {
+    font-size: 36px;
+    line-height: 0.83;
+  }
+
+  &__features th {
+    font-weight: 400;
+    line-height: 1.875;
+    color: $dark;
+  }
 }
 
 .tabs {
