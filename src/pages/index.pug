@@ -57,9 +57,9 @@ block content
               th Вес палки
               th Материал
       div.slider__arrows
-        button.slider__arrow.slider__arrow-prev(type="button")
+        button.slider__arrow(type="button")
           span.visually-hidden Назад
-        button.slider__arrow.slider__arrow-next(type="button")
+        button.slider__arrow.slider__arrow--right(type="button")
           span.visually-hidden Вперед
       div.slider__dots
         button.slider__dot.slider__dot--active.num_0(type="button")
@@ -75,27 +75,27 @@ block content
         li.categories__item
           a.categories__link(href="#")
             img(src=require('../images/categories/category-1.png') width="97" height="55" alt="Карточка категории Виртуальная реальность")
-            h3 Виртуальная реальность
+            span.font-raleway Виртуальная реальность
         li.categories__item
           a.categories__link(href="pages/catalog.html")
             img(src=require('../images/categories/category-2.png') width="87" height="117" alt="Карточка категории Моноподы для селфи")
-            h3 Моноподы для селфи
+            span.font-raleway Моноподы для селфи
         li.categories__item
           a.categories__link(href="#")
             img(src=require('../images/categories/category-3.png') width="72" height="87" alt="Карточка категории Экшн-камеры")
-            h3 Экшн-камеры
+            span.font-raleway Экшн-камеры
         li.categories__item
           a.categories__link(href="#")
             img(src=require('../images/categories/category-4.png') width="108" height="66" alt="Карточка категории Фитнес-браслеты")
-            h3 Фитнес-браслеты
+            span.font-raleway Фитнес-браслеты
         li.categories__item
           a.categories__link(href="#")
             img(src=require('../images/categories/category-5.png') width="57" height="98" alt="Карточка категории Умные часы")
-            h3 Умные часы
+            span.font-raleway Умные часы
         li.categories__item
           a.categories__link(href="#")
             img(src=require('../images/categories/category-6.png') width="133" height="70" alt="Карточка категории Квадрокоптеры")
-            h3 Квадрокоптеры
+            span.font-raleway Квадрокоптеры
 
     section.main__services.services
       h2.visually-hidden Сервисы
