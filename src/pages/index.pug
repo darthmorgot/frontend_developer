@@ -9,7 +9,7 @@ block content
   main.main
     h1.visually-hidden Интернет-магазин Device
 
-    section.main__slider.slider
+    section.main__slider.slider.container
       h2.visually-hidden Слайдер
       div.slider__item.slider__item--active
         div.slider__left
@@ -69,7 +69,7 @@ block content
         button.slider__dot.num_2(type="button")
           span.visually-hidden Слайд 3
 
-    section.main__categories.categories
+    section.main__categories.categories.container
       h2.visually-hidden Категории товаров
       ul.categories__list
         li.categories__item
@@ -98,26 +98,27 @@ block content
             span.font-raleway Квадрокоптеры
 
     section.main__services.services
-      h2.visually-hidden Сервисы
-      div.services__tabs.tabs
-        div.tabs__panel
-          button.tabs__switch.tabs__switch--active(type="button" data-tab="tabs__item--delivery") Доставка
-          button.tabs__switch(type="button" data-tab="tabs__item--warranty") Гарантия
-          button.tabs__switch(type="button" data-tab="tabs__item--credit") Кредит
-        div.tabs__wrapper
-          div.tabs__item.tabs__item--delivery.tabs__item--active
-            h3 Доставка
-            p Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-          div.tabs__item.tabs__item--warranty
-            h3 Гарантия
-            p Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-          div.tabs__item.tabs__item--credit
-            h3 Кредит
-            p Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
+      div.container
+        h2.visually-hidden Сервисы
+        div.services__tabs.tabs
+          div.tabs__panel
+            button.tabs__switch.tabs__switch--active.font-raleway(type="button" data-tab="tabs__item--delivery") Доставка
+            button.tabs__switch.font-raleway(type="button" data-tab="tabs__item--warranty") Гарантия
+            button.tabs__switch.font-raleway(type="button" data-tab="tabs__item--credit") Кредит
+          div.tabs__wrapper
+            div.tabs__item.tabs__item--delivery.tabs__item--active
+              h3.font-raleway Доставка
+              p Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            div.tabs__item.tabs__item--warranty
+              h3.font-raleway Гарантия
+              p Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+            div.tabs__item.tabs__item--credit
+              h3.font-raleway Кредит
+              p Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
 
-    section.main__delivery-order.delivery-order
+    section.main__delivery-order.delivery-order.container
       h2.visually-hidden Доставка редких товаров
-      a.delivery-order__link(href="#") Доставим редкий товар под заказ
+      a.delivery-order__link.font-raleway(href="#") Доставим редкий товар под заказ
 
     div.main__info.info
       section.main__about-us.about-us
