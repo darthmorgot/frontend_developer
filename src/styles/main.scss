@@ -49,15 +49,18 @@ a {
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.167;
   text-transform: uppercase;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 // header
 .header {
-  width: 1160px;
   padding: 0 60px 0 60px;
-  margin: 0 auto;
   background-image: linear-gradient(to bottom, $white 40px, $yellow 40px);
 
   &__top {
@@ -152,11 +155,6 @@ a {
 }
 
 // index main
-.main {
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .slider {
   &__item {
     display: flex;
@@ -256,10 +254,42 @@ a {
   }
 }
 
+.services {
+  background-image: linear-gradient(to bottom, $white 100px, $light 100px);
+
+  &__tabs {
+    display: flex;
+  }
+}
+
 .tabs {
+  &__panel {
+    border-right: 7px solid $black;
+  }
+  &__switch {
+    display: block;
+    letter-spacing: 0.2em;
+    border: none;
+    cursor: pointer;
+  }
+
   &__switch--active {
     color: $yellow;
     background-color: $black;
+  }
+
+  &__item {
+    h3 {
+      font-size: 50px;
+      line-height: 1;
+      text-transform: none;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.667;
+      color: $dark;
+    }
   }
 
   &__item--delivery {
@@ -278,10 +308,12 @@ a {
 .delivery-order__link {
   display: flex;
   justify-content: space-between;
-  width: 1160px;
   height: 100px;
-  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.2em;
   background-color: $light;
+  color: $black;
 }
 
 .delivery-order__link::before {
