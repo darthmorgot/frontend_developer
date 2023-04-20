@@ -337,6 +337,27 @@ a {
   border-radius: 50%;
 }
 
+.info {
+  display: flex;
+}
+
+.info h2 {
+  font-size: 50px;
+  line-height: 1;
+  text-transform: none;
+}
+
+.info a {
+  letter-spacing: 0.2em;
+  color: $black;
+}
+
+.info p {
+  font-size: 18px;
+  line-height: 1.67;
+  color: $dark;
+}
+
 .about-us {
   &::before {
     content: "";
@@ -348,10 +369,27 @@ a {
 
   &__list {
     list-style: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.115;
+    letter-spacing: -0.02em;
+  }
+
+  &__list li::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $yellow-hover;
   }
 }
 
 .contacts {
+  font-size: 18px;
+  line-height: 1.67;
+  color: $dark;
+
   &::before {
     content: "";
     display: inline-block;
@@ -359,9 +397,61 @@ a {
     height: 7px;
     background: url('Images/icons/icon-divider.svg') no-repeat center center;
   }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+  }
 }
 
 .subscribe {
+  background-color: $light;
+
+  &__top {
+    display: flex;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1;
+    text-transform: none;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+  }
+
+  &__form input {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+    border: none;
+    border-bottom: 3px solid #c4c4c4;
+    background-color: $light;
+  }
+
+  &__form input::placeholder {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+  }
+
+  &__btn {
+    letter-spacing: 0.2em;
+    border: 3px solid #c4c4c4;
+    cursor: pointer;
+  }
+
+  &__message {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+  }
+
   &__message::before {
     content: "";
     display: inline-block;
