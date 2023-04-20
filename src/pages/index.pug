@@ -120,35 +120,37 @@ block content
       h2.visually-hidden Доставка редких товаров
       a.delivery-order__link.font-raleway(href="#") Доставим редкий товар под заказ
 
-    div.main__info.info
+    div.main__info.info.container
       section.main__about-us.about-us
-        h2 О нас
+        h2.font-raleway О нас
         p Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
         p Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
         ul.about-us__list
           li Меловые линии
           li СДИК
           li ТоксБерри
-        a.about-us__btn.button(href="#") Подробнее о нас
+        a.about-us__btn.button.font-raleway(href="#") Подробнее о нас
       section.main__contacts.contacts
-        h2 Контакты
+        h2.font-raleway Контакты
         p Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.
-        span Интернет-магазин «Девайс»
+        span.contacts__heading Интернет-магазин «Девайс»
         address Санкт-Петербург, набережная реки Карповки, 5, литера П.
-        span +7 (812) 812-12-12
-        span Время работы
-        span пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00
-        a.contacts__btn.button(href="#") Напишите нам
+        span.contacts__phone +7 (812) 812-12-12
+        span.contacts__heading Время работы
+        span.contacts__time-work пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00
+        a.contacts__btn.button.font-raleway(href="#") Напишите нам
 
     section.main__subscribe.subscribe
-      h2.subscribe__title Подпишитесь на рассылку
-      p.subscribe__description Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-      form.subscribe__form(action="https://echo.htmlacademy.ru/" method="post")
-        label.subscribe__field.field
-          span.visually-hidden Ваш e-mail
-          input.field__input(type="email" name="email" placeholder="Ваш e-mail")
-        button.subscribe__btn.button(type="submit") Подписаться
-        span.subscribe__message Это бесплатно
+      div.container
+        div.subscribe__top
+          h2.subscribe__title.font-raleway Подпишитесь на рассылку
+          p.subscribe__description Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+        form.subscribe__form(action="https://echo.htmlacademy.ru/" method="post")
+          label.subscribe__field.field
+            span.visually-hidden Ваш e-mail
+            input.field__input(type="email" name="email" placeholder="Ваш e-mail")
+          button.subscribe__btn.button.font-raleway(type="submit") Подписаться
+          span.subscribe__message Это бесплатно
 
 block modal
   include includes/popup-cart
