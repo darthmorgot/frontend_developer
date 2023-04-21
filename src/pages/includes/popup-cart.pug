@@ -2,13 +2,15 @@ section.popup-cart
   h2.visually-hidden Товары в корзине
   ul.popup-cart__list.cart-list
     li.cart-list__item
-      img(src=require('../../images/products/product-1-small.jpg') width="39" height="43" alt="Карточка товара Любительская селфи-палка.")
-      a.cart-list__link(href="#") Любительская селфи-палка
+      a.cart-list__link(href="#")
+        img(src=require('../../images/products/product-1-small.jpg') width="39" height="43" alt="Карточка товара Любительская селфи-палка.")
+        span Любительская селфи-палка
       button.cart-list__delete(type="button")
         span.visually-hidden Удалить товар из корзины
     li.cart-list__item
-      img(src=require('../../images/products/product-2-small.jpg') width="39" height="43" alt="Карточка товара Профессиональная селфи-палка.")
-      a.cart-list__link(href="#") Профессиональная селфи-палка
+      a.cart-list__link(href="#")
+        img(src=require('../../images/products/product-2-small.jpg') width="39" height="43" alt="Карточка товара Профессиональная селфи-палка.")
+        span Профессиональная селфи-палка
       button.cart-list__delete(type="button")
         span.visually-hidden Удалить товар из корзины
   div.popup-cart__total
@@ -16,4 +18,4 @@ section.popup-cart
       span 2
     p.popup-cart__amount Cумма:&nbsp;
       span 2000 &#8381;
-  a.popup-cart__btn.button(href="#") Открыть корзину
+  a.popup-cart__btn.button.font-raleway(href="#") Открыть корзину
