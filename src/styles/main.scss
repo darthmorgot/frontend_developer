@@ -403,6 +403,10 @@ a {
     font-size: 24px;
     line-height: 1.25;
   }
+
+  &__address {
+    font-style: normal;
+  }
 }
 
 .subscribe {
@@ -462,11 +466,48 @@ a {
 }
 
 // index popup
-.cart-list {
-  list-style: none;
+.popup-cart {
+  position: relative;
+  width: 320px;
+  background-color: $black;
+  color: $white;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    top: -5px;
+    left: calc(50% - 5px);
+    border: 5px solid $black;
+    transform: rotate(45deg);
+  }
+
+  &__total {
+    display: flex;
+  }
+
+  &__btn {
+    letter-spacing: 0.2em;
+    color: $black;
+    background-color: $white;
+  }
 }
 
+.cart-list {
+  padding: 0;
+  list-style: none;
+
+  &__link {
+    color: $white;
+  }
+}
+
+
 // index modal
+.modal-delivery {
+  width: 920px;
+  border: 10px solid $black;
+}
+
 .form-order__info {
   display: inline-block;
   position: relative;
@@ -501,6 +542,33 @@ a {
 }
 
 // footer
+.footer {
+  background-color: $dark;
+}
+
+.footer-main {
+  display: flex;
+
+  &__contacts {
+    font-style: normal;
+    color: $white;
+  }
+
+  &__services a {
+    letter-spacing: 0.2em;
+    color: $white;
+  }
+
+  &__phone a {
+    text-decoration-line: underline;
+    color: $white;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+}
+
 .footer-bottom::before {
   content: "";
   display: inline-block;
@@ -512,6 +580,21 @@ a {
 .social {
   display: flex;
   list-style: none;
+
+  &__item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $white;
+    opacity: 30%;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
 
   &__link--fb {
     background: url('Images/icons/icon-facebook.svg') no-repeat center center;
