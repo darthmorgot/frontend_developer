@@ -1,0 +1,32 @@
+// delivery
+.delivery-order__link {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.2em;
+  background-color: $light;
+  color: $black;
+}
+
+.delivery-order__link::before {
+  content: "";
+  width: 125px;
+  height: 100px;
+  background: url('Images/icons/icon-delivery.svg') no-repeat center center;
+  background-color: $yellow;
+}
+
+.delivery-order__link::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 30px;
+  right: 42px;
+  background: url('Images/icons/icon-i.svg') no-repeat center center;
+  background-color: $grey;
+  opacity: 50%;
+  border-radius: 50%;
+}
