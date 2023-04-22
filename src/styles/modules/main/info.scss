@@ -1,0 +1,72 @@
+// info
+.info {
+  display: flex;
+}
+
+.info h2 {
+  font-size: 50px;
+  line-height: 1;
+  text-transform: none;
+}
+
+.info a {
+  letter-spacing: 0.2em;
+  color: $black;
+}
+
+.info p {
+  font-size: 18px;
+  line-height: 1.67;
+  color: $dark;
+}
+
+.about-us {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 84px;
+    height: 7px;
+    background: url('Images/icons/icon-divider.svg') no-repeat center center;
+  }
+
+  &__list {
+    list-style: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.115;
+    letter-spacing: -0.02em;
+  }
+
+  &__list li::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $yellow-hover;
+  }
+}
+
+.contacts {
+  font-size: 18px;
+  line-height: 1.67;
+  color: $dark;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 84px;
+    height: 7px;
+    background: url('Images/icons/icon-divider.svg') no-repeat center center;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  &__address {
+    font-style: normal;
+  }
+}
