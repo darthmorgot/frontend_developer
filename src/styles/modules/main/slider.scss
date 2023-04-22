@@ -1,0 +1,75 @@
+// slider
+.slider {
+  &__item {
+    display: flex;
+    background-image: linear-gradient(to bottom, $yellow 149px, $white 149px);
+  }
+
+  &__right {
+    width: 560px;
+  }
+
+  &__right span {
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 0.167;
+    color: $white;
+  }
+
+  &__slogan {
+    font-size: 50px;
+    line-height: 1;
+    text-transform: none;
+  }
+
+  &__desc {
+    font-size: 18px;
+    line-height: 1.167;
+    color: $dark;
+  }
+
+  &__right a {
+    color: $black;
+  }
+
+  &__features td {
+    font-size: 36px;
+    line-height: 0.83;
+  }
+
+  &__features th {
+    font-weight: 400;
+    line-height: 1.875;
+    color: $dark;
+  }
+
+  &__arrow {
+    width: 20px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    background: url('Images/icons/icon-slider-arrow.svg') no-repeat center center;
+  }
+
+  &__arrow--right {
+    transform: rotate(180deg);
+  }
+
+  &__dots {
+    display: flex;
+  }
+
+  &__dot {
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border: 2px solid $black;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__dot--active {
+    background: $black;
+  }
+}
