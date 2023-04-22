@@ -1,0 +1,24 @@
+// categories
+.categories {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+    width: 160px;
+    height: 253px;
+    background-image: linear-gradient(to bottom, $yellow 160px, $white 160px);
+  }
+
+  &__link span {
+    line-height: 1.133;
+    letter-spacing: -0.02em;
+    color: $black;
+    text-transform: none;
+  }
+}
