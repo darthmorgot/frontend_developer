@@ -1,0 +1,67 @@
+// footer
+.footer {
+  background-color: $dark;
+}
+
+.footer-main {
+  display: flex;
+
+  &__contacts {
+    font-style: normal;
+    color: $white;
+  }
+
+  &__services a {
+    letter-spacing: 0.2em;
+    color: $white;
+  }
+
+  &__phone a {
+    text-decoration-line: underline;
+    color: $white;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+}
+
+.footer-bottom::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 7px;
+  background: url('Images/icons/icon-divider-yellow.svg') no-repeat center center;
+}
+
+.social {
+  display: flex;
+  list-style: none;
+
+  &__item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $white;
+    opacity: 30%;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &__link--fb {
+    background: url('Images/icons/icon-facebook.svg') no-repeat center center;
+  }
+
+  &__link--insta {
+    background: url('Images/icons/icon-instagram.svg') no-repeat center center;
+  }
+
+  &__link--twitter {
+    background: url('Images/icons/icon-twitter.svg') no-repeat center center;
+  }
+}
