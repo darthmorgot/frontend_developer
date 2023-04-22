@@ -1,0 +1,56 @@
+// subscribe
+.subscribe {
+  background-color: $light;
+
+  &__top {
+    display: flex;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1;
+    text-transform: none;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+  }
+
+  &__form input {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+    border: none;
+    border-bottom: 3px solid #c4c4c4;
+    background-color: $light;
+  }
+
+  &__form input::placeholder {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+  }
+
+  &__btn {
+    letter-spacing: 0.2em;
+    border: 3px solid #c4c4c4;
+    cursor: pointer;
+  }
+
+  &__message {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+  }
+
+  &__message::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('Images/icons/icon-tick-green.svg') no-repeat center center;
+  }
+}
