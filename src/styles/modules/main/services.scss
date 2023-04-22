@@ -1,0 +1,51 @@
+// services
+.services {
+  background-image: linear-gradient(to bottom, $white 100px, $light 100px);
+
+  &__tabs {
+    display: flex;
+  }
+}
+
+.tabs {
+  &__panel {
+    border-right: 7px solid $black;
+  }
+  &__switch {
+    display: block;
+    letter-spacing: 0.2em;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__switch--active {
+    color: $yellow;
+    background-color: $black;
+  }
+
+  &__item {
+    h3 {
+      font-size: 50px;
+      line-height: 1;
+      text-transform: none;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.667;
+      color: $dark;
+    }
+  }
+
+  &__item--delivery {
+    background: url('Images/slide-delivery.png') no-repeat right bottom;
+  }
+
+  &__item--warranty {
+    background: url('Images/slide-warranty.png') no-repeat right bottom;
+  }
+
+  &__item--credit {
+    background: url('Images/slide-credit.png') no-repeat right bottom;
+  }
+}
