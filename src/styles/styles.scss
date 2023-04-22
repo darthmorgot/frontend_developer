@@ -1,5 +1,4 @@
-@import 'normalize.scss';
-@import 'fonts.scss';
-@import 'vars.scss';
-@import 'main.scss';
-@import 'catalog.scss';
+@import 'utils/vars.scss';
+@import 'utils/fonts.scss';
+@import 'utils/normalize.scss';
+@import 'modules/main.scss';
