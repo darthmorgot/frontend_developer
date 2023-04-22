@@ -1,0 +1,95 @@
+// header
+.header {
+  padding: 0 60px 0 60px;
+  background-image: linear-gradient(to bottom, $white 40px, $yellow 40px);
+
+  &__top {
+    padding-top: 17px;
+  }
+
+  &__main {
+    display: flex;
+  }
+}
+
+.logo {
+  display: block;
+  width: 145px;
+  height: 36px;
+}
+
+.header-main {
+  &__user {
+    display: flex;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    background-image: url('Images/icons/icon-login.svg');
+  }
+
+  &__auth {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $black;
+  }
+
+  &__link--icon::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 21px;
+    background: url('Images/icons/icon-cart.svg') no-repeat center center;
+  }
+
+  & span {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+
+.auth-list {
+  &__item a {
+    color: $black;
+  }
+}
+
+.nav {
+  &__btn {
+    width: 293px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__btn--open {
+    background: url('Images/icons/icon-plus-ellipse.svg') no-repeat right bottom;
+  }
+
+  &__btn--close {
+    background: url('Images/icons/icon-minus-ellipse.svg') no-repeat right bottom;
+  }
+
+  &__list {
+    line-height: 1.125;
+    list-style: none;
+  }
+
+  &__item a {
+    color: $black;
+  }
+
+  &__services a {
+    color: $black;
+  }
+}
