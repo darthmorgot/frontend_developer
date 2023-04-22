@@ -1,0 +1,33 @@
+// modal
+.modal-delivery {
+  width: 920px;
+  border: 10px solid $black;
+}
+
+.form-order__info {
+  display: inline-block;
+  position: relative;
+  padding: 5px 12px;
+  border-radius: 50%;
+  background: $yellow;
+
+  &:hover::before {
+    position: absolute;
+    content: attr(data-info);
+    min-width: 200px;
+    padding: 15px;
+    background-color: $black;
+    transform: translate(-10%);
+    bottom: calc(100% + 10px);
+    color: $white;
+  }
+
+  &:hover::after {
+    position: absolute;
+    content: " ";
+    bottom: calc(100% + 6px);
+    left: 10px;
+    border: 5px solid $black;
+    transform: rotate(45deg);
+  }
+}
