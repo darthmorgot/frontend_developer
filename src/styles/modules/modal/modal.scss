@@ -2,32 +2,94 @@
 .modal-delivery {
   width: 920px;
   border: 10px solid $black;
-}
 
-.form-order__info {
-  display: inline-block;
-  position: relative;
-  padding: 5px 12px;
-  border-radius: 50%;
-  background: $yellow;
-
-  &:hover::before {
-    position: absolute;
-    content: attr(data-info);
-    min-width: 200px;
-    padding: 15px;
-    background-color: $black;
-    transform: translate(-10%);
-    bottom: calc(100% + 10px);
-    color: $white;
+  &__title {
+    display: flex;
   }
 
-  &:hover::after {
-    position: absolute;
-    content: " ";
-    bottom: calc(100% + 6px);
-    left: 10px;
-    border: 5px solid $black;
-    transform: rotate(45deg);
+  &__title h2 {
+    font-size: 50px;
+    line-height: 1;
+    text-transform: none;
+  }
+}
+
+.form-order {
+  label {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.02em;
+  }
+
+  &__input,
+  &__message {
+    font-size: 16px;
+    line-height: 1.25;
+    background-color: $light;
+    border: none;
+  }
+
+  &__input::placeholder,
+  &__message::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    opacity: 0.3;
+  }
+
+  &__input--name::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    background: url('Images/icons/icon-login.svg') no-repeat center center;
+  }
+
+  &__input--mail::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    background: url('Images/icons/icon-letter.svg') no-repeat center center;
+  }
+
+  &__error {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  &__info {
+    display: inline-block;
+    position: relative;
+    padding: 5px 12px;
+    border-radius: 50%;
+    background: $yellow;
+
+    &:hover::before {
+      position: absolute;
+      content: attr(data-info);
+      min-width: 200px;
+      padding: 15px;
+      background-color: $black;
+      transform: translate(-10%);
+      bottom: calc(100% + 10px);
+      color: $white;
+    }
+
+    &:hover::after {
+      position: absolute;
+      content: " ";
+      bottom: calc(100% + 6px);
+      left: 10px;
+      border: 5px solid $black;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__btn {
+    letter-spacing: 0.2em;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
   }
 }
