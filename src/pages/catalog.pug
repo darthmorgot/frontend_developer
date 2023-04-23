@@ -8,11 +8,10 @@ block variables
 block content
   main.main
     div.container
-      h2.main__title Моноподы для селфи
+      h2.main__title.font-raleway Моноподы для селфи
       ul.main__breadcrumbs.breadcrumbs
         li.breadcrumbs__item
-          a.breadcrumbs__link.breadcrumbs__link--home(href="../index.html")
-            span.visually-hidden Главная
+          a.breadcrumbs__link(href="../index.html") Главная
         li.breadcrumbs__item
           a.breadcrumbs__link(href="catalog.html") Каталог товаров
         li.breadcrumbs__item
@@ -20,10 +19,11 @@ block content
 
       div.main__catalog.catalog
         section.catalog__filter.filter
-          h2.filter__header Фильтр:
+          h2.filter__heading.font-raleway Фильтр:
           form.filter__form(action="https://echo.htmlacademy.ru" method="get")
+            div.filter__divider
             fieldset.filter__price
-              legend Стоимость:
+              legend Стоимость
               div.filter__range
                 span.visually-hidden Шкала цен с двумя ползунками
                 div.filter__scale
@@ -38,8 +38,9 @@ block content
                 span.filter__separator —
                 label.visually-hidden Верхняя цена
                   input.filter__input(type="text" name="price_upper" value="5000")
+            div.filter__divider
             fieldset.filter__color
-              legend Цвет:
+              legend Цвет
               ul.filter__color-list
                 li.filter__color-item
                   input#filter-black.visually-hidden(type="checkbox" name="black" checked)
@@ -56,8 +57,9 @@ block content
                 li.filter__color-item
                   input#filter-pink.visually-hidden(type="checkbox" name="pink")
                   label(for="filter-pink") Розовый
+            div.filter__divider
             fieldset.filter__bluetooth
-              legend Bluetooth:
+              legend Bluetooth
               ul.filter__bluetooth-list
                 li.filter__bluetooth-item
                   input#filter-yes.visually-hidden(type="radio" name="bluetooth" value="yes" checked)
@@ -65,7 +67,7 @@ block content
                 li.filter__bluetooth-item
                   input#filter-no.visually-hidden(type="radio" name="bluetooth" value="no")
                   label(for="filter-no") Нет
-            button.filter__btn(type="submit") Показать
+            button.filter__btn.font-raleway(type="submit") Показать
 
         section.catalog__products.products
           h2.visually-hidden Список товаров
