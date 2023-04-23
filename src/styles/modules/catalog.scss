@@ -1,4 +1,90 @@
 // catalog
+.main {
+  &__title {
+    font-size: 50px;
+    line-height: 1;
+    text-transform: none;
+  }
+
+  &__breadcrumbs {
+    display: flex;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.breadcrumbs {
+  &__link {
+    position: relative;
+    margin-right: 40px;
+    line-height: 1.1875;
+    color: $black;
+  }
+
+  &__link::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    width: 4px;
+    height: 7px;
+    opacity: 0.2;
+    background: url('Images/icons/icon-nav-arrow.svg') no-repeat;
+  }
+
+  &__link--current::after {
+    display: none;
+  }
+}
+
+.catalog {
+  display: flex;
+
+  &__filter {
+    width: 320px;
+  }
+
+  &__products {
+    width: 840px;
+  }
+}
+
+.filter {
+  &__heading {
+    font-size: 16px;
+    line-height: 1.1875;
+    letter-spacing: 0.2em;
+  }
+
+  &__form legend {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.02em;
+  }
+
+  &__divider {
+    width: 200px;
+    border: 2px solid #000000;
+  }
+
+  &__price,
+  &__color,
+  &__bluetooth {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__btn {
+    letter-spacing: 0.2em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
 .products__list {
+  display: flex;
   list-style: none;
 }
