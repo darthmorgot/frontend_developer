@@ -88,29 +88,32 @@ block content
           ul.products__list
             li.products__item.product.new
               img(src=require('../images/catalog/product-1.jpg') width="360" height="380" alt="Карточка товара Любительская селфи-палка.")
-              h3.product__title Любительская селфи-палка
-              span.product__price 500 &#8381;
-              a.button.product__btn.product__btn--detailed(href="#") Подробнее
+              div.product__info
+                h3.product__title Любительская селфи-палка
+                span.product__price 500 &#8381;
+              a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
             li.products__item.product
               img(src=require('../images/catalog/product-2.jpg') width="360" height="380" alt="Карточка товара Профессиональная селфи-палка.")
-              h3.product__title Профессиональная селфи-палка
-              span.product__price 1500 &#8381;
-              a.button.product__btn.product__btn--detailed(href="#") Подробнее
+              div.product__info
+                h3.product__title Профессиональная селфи-палка
+                span.product__price 1500 &#8381;
+              a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
             li.products__item.product.new
               img(src=require('../images/catalog/product-3.jpg') width="360" height="380" alt="Карточка товара Непотопляемая селфи-палка.")
-              h3.product__title Непотопляемая селфи-палка
-              span.product__price 2500 &#8381;
-              a.button.product__btn.product__btn--detailed(href="#") Подробнее
+              div.product__info
+                h3.product__title Непотопляемая селфи-палка
+                span.product__price 2500 &#8381;
+              a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
             li.products__item.product.new
               img(src=require('../images/catalog/product-4.jpg') width="360" height="380" alt="Карточка товара Селфи-палка «Следуй за мной».")
-              h3.product__title Селфи-палка «Следуй за мной»
-              span.product__price 1500 &#8381;
-              a.button.product__btn.product__btn--detailed(href="#") Подробнее
-          div.products__button
-            button(type="button") Загрузить еще
+              div.product__info
+                h3.product__title Селфи-палка «Следуй за мной»
+                span.product__price 1500 &#8381;
+              a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
+          button.products__button.font-raleway(type="button") Загрузить еще
           ul.catalog__pagination.pagination
             li.pagination__item
-              a(href="#") Вперед
+              a.font-raleway(href="#") Вперед
             li.pagination__item.current
               a 1
             li.pagination__item
@@ -118,7 +121,11 @@ block content
             li.pagination__item
               a(href="#") 3
             li.pagination__item
-              a(href="#") Назад
+              a ...
+            li.pagination__item
+              a(href="#") 15
+            li.pagination__item
+              a.font-raleway(href="#") Назад
 
 block modal
   include includes/popup-cart
