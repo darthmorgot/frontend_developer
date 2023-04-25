@@ -152,6 +152,78 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    padding: 0;
     list-style: none;
+  }
+
+  &__item {
+    width: 360px;
+    margin-left: 40px;
+  }
+
+  &__button {
+    width: 760px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 3px solid $border-grey;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.1875;
+    letter-spacing: 0.2em;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.product {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    width: 225px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.02em;
+  }
+
+  &__price {
+    font-size: 18px;
+    line-height: 1.167;
+    color: $dark;
+  }
+
+  &__btn {
+    letter-spacing: 0.2em;
+    color: $black;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
+  padding: 25px;
+  list-style: none;
+  background-color: $lightgrey;
+
+  &__item {
+    a {
+      color: $dark;
+      opacity: 0.3;
+    }
+  }
+
+  &__item:first-child,
+  &__item:last-child {
+    a {
+      letter-spacing: 0.2em;
+      color: $black;
+      opacity: 1;
+    }
   }
 }
