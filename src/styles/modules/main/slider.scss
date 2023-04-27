@@ -46,8 +46,6 @@
   &__arrow {
     width: 20px;
     height: 60px;
-    border: none;
-    cursor: pointer;
     background: url('Images/icons/icon-slider-arrow.svg') no-repeat center center;
   }
 
@@ -66,7 +64,6 @@
     padding: 0;
     border: 2px solid $black;
     border-radius: 50%;
-    cursor: pointer;
   }
 
   &__dot--active {

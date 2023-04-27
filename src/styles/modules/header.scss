@@ -58,6 +58,42 @@
   }
 }
 
+.form-search {
+  position: relative;
+
+  &__input {
+    padding: 10px;
+    padding-left: 48px;
+    line-height: 1.25;
+    border: 2px solid $black;
+    border-right: none;
+    border-radius: 50px 0px 0px 50px;
+    background-color: $yellow;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    width: 16px;
+    height: 16px;
+    background: url('Images/icons/icon-search.svg') no-repeat;
+  }
+
+  &__input::placeholder {
+    color: $black;
+  }
+
+  &__btn {
+    padding: 10px;
+    line-height: 1.25;
+    border: 2px solid $black;
+    border-radius: 0px 50px 50px 0px;
+    background-color: $yellow;
+  }
+}
+
 .auth-list {
   &__item a {
     color: $black;
@@ -68,8 +104,6 @@
   &__btn {
     width: 293px;
     height: 50px;
-    border: none;
-    cursor: pointer;
   }
 
   &__btn--open {

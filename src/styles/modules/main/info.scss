@@ -1,23 +1,23 @@
 // info
 .info {
   display: flex;
-}
 
-.info h2 {
-  font-size: 50px;
-  line-height: 1;
-  text-transform: none;
-}
+  h2 {
+    font-size: 50px;
+    line-height: 1;
+    text-transform: none;
+  }
 
-.info a {
-  letter-spacing: 0.2em;
-  color: $black;
-}
+  a {
+    letter-spacing: 0.2em;
+    color: $black;
+  }
 
-.info p {
-  font-size: 18px;
-  line-height: 1.67;
-  color: $dark;
+  p {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+  }
 }
 
 .about-us {
