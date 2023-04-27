@@ -28,6 +28,12 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 // .visually-hidden:not(:focus):not(:active),
 // input[type="checkbox"].visually-hidden,
 // input[type="radio"].visually-hidden {
@@ -56,4 +62,14 @@ a {
 .container {
   width: 1160px;
   margin: 0 auto;
+}
+
+.new::after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  background: url('Images/new.png') no-repeat;
 }
