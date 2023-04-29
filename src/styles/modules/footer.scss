@@ -24,15 +24,22 @@
 
 .footer-bottom {
   display: flex;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 7px;
+    background: url('Images/icons/icon-divider-yellow.svg') no-repeat center center;
+  }
+
+  &__link:hover {
+    svg {
+      fill: $white;
+    }
+  }
 }
 
-.footer-bottom::before {
-  content: "";
-  display: inline-block;
-  width: 80px;
-  height: 7px;
-  background: url('Images/icons/icon-divider-yellow.svg') no-repeat center center;
-}
 
 .social {
   display: flex;

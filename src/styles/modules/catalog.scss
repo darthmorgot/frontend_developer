@@ -1,5 +1,5 @@
 // catalog
-.main {
+.catalog-header {
   &__title {
     font-size: 50px;
     line-height: 1;
@@ -205,19 +205,15 @@
   list-style: none;
   background-color: $lightgrey;
 
-  &__item {
-    a {
-      color: $dark;
-      opacity: 0.3;
-    }
+  &__link {
+    color: $dark;
+    opacity: 0.3;
   }
 
-  &__item:first-child,
-  &__item:last-child {
-    a {
-      letter-spacing: 0.2em;
-      color: $black;
-      opacity: 1;
-    }
+  &__link--prev,
+  &__link--next {
+    letter-spacing: 0.2em;
+    color: $black;
+    opacity: 1;
   }
 }
