@@ -8,14 +8,15 @@ block variables
 block content
   main.main
     div.container
-      h2.main__title.font-raleway Моноподы для селфи
-      ul.main__breadcrumbs.breadcrumbs
-        li.breadcrumbs__item
-          a.breadcrumbs__link(href="../index.html") Главная
-        li.breadcrumbs__item
-          a.breadcrumbs__link(href="catalog.html") Каталог товаров
-        li.breadcrumbs__item
-          a.breadcrumbs__link.breadcrumbs__link--current Моноподы для селфи
+      header.main__catalog-header.catalog-header
+        h2.catalog-header__title.font-raleway Моноподы для селфи
+        ul.catalog-header__breadcrumbs.breadcrumbs
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="../index.html") Главная
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="catalog.html") Каталог товаров
+          li.breadcrumbs__item
+            a.breadcrumbs__link.breadcrumbs__link--current Моноподы для селфи
 
       div.main__catalog.catalog
         section.catalog__filter.filter
@@ -113,19 +114,19 @@ block content
           button.products__button.font-raleway(type="button") Загрузить еще
           ul.catalog__pagination.pagination
             li.pagination__item
-              a.font-raleway(href="#") Вперед
-            li.pagination__item.current
-              a 1
+              a.pagination__link.pagination__link--prev.pagination__link--disabled.font-raleway(href="#") Назад
             li.pagination__item
-              a(href="#") 2
+              a.pagination__link.pagination__link--current 1
             li.pagination__item
-              a(href="#") 3
+              a.pagination__link(href="#") 2
             li.pagination__item
-              a ...
+              a.pagination__link(href="#") 3
             li.pagination__item
-              a(href="#") 15
+              a.pagination__link ...
             li.pagination__item
-              a.font-raleway(href="#") Назад
+              a.pagination__link(href="#") 15
+            li.pagination__item
+              a.pagination__link.pagination__link--next.font-raleway(href="#") Вперед
 
 block modal
   include includes/popup-cart
