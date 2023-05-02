@@ -4,10 +4,10 @@
   justify-content: space-between;
   height: 100px;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 23px;
   letter-spacing: 0.2em;
   background-color: $light;
-  color: $black;
+  text-transform: uppercase;
 }
 
 .delivery-order__link::before {

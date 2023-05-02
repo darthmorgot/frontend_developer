@@ -9,8 +9,7 @@
 
   &__title h2 {
     font-size: 50px;
-    line-height: 1;
-    text-transform: none;
+    line-height: 50px;
   }
 }
 
@@ -18,22 +17,20 @@
   label {
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.11;
+    line-height: 20px;
     letter-spacing: -0.02em;
   }
 
   &__input,
   &__message {
     font-size: 16px;
-    line-height: 1.25;
+    line-height: 20px;
     background-color: $light;
     border: none;
   }
 
   &__input::placeholder,
   &__message::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
     opacity: 0.3;
   }
 
@@ -55,7 +52,7 @@
 
   &__error {
     font-size: 14px;
-    line-height: 1.43;
+    line-height: 20px;
   }
 
   &__info {

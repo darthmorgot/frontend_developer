@@ -4,8 +4,8 @@
 
   h2 {
     font-size: 50px;
-    line-height: 1;
-    text-transform: none;
+    line-height: 50px;
+    color: $black;
   }
 
   a {
@@ -15,7 +15,7 @@
 
   p {
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 30px;
     color: $dark;
   }
 }
@@ -30,10 +30,11 @@
   }
 
   &__list {
+    padding: 0;
     list-style: none;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.115;
+    line-height: 20px;
     letter-spacing: -0.02em;
   }
 
@@ -49,7 +50,7 @@
 
 .contacts {
   font-size: 18px;
-  line-height: 1.67;
+  line-height: 30px;
   color: $dark;
 
   &::before {
@@ -63,11 +64,15 @@
   &__heading {
     font-weight: 700;
     font-size: 24px;
-    line-height: 1.25;
+    line-height: 30px;
   }
 
   &__address {
     font-style: normal;
+  }
+
+  &__phone {
+    text-decoration: underline;
   }
 
   &__schedule {

@@ -1,6 +1,9 @@
 // subscribe
 .subscribe {
   background-color: $light;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark;
 
   &__top {
     display: flex;
@@ -9,19 +12,13 @@
   &__title {
     font-weight: 800;
     font-size: 50px;
-    line-height: 1;
-    text-transform: none;
-  }
-
-  &__description {
-    font-size: 18px;
-    line-height: 1.67;
-    color: $dark;
+    line-height: 50px;
+    color: $black;
   }
 
   &__form input {
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 30px;
     color: $dark;
     border: none;
     border-bottom: 3px solid #c4c4c4;
@@ -29,20 +26,13 @@
   }
 
   &__form input::placeholder {
-    font-size: 18px;
-    line-height: 1.67;
-    color: $dark;
+    opacity: 0.5;
   }
 
   &__btn {
     letter-spacing: 0.2em;
     border: 3px solid #c4c4c4;
-  }
-
-  &__message {
-    font-size: 18px;
-    line-height: 1.67;
-    color: $dark;
+    color: $black;
   }
 
   &__message::before {
