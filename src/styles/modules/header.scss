@@ -52,9 +52,15 @@
     background: url('Images/icons/icon-cart.svg') no-repeat center center;
   }
 
-  & span {
+  span {
     font-size: 14px;
     line-height: 17px;
+  }
+}
+
+.auth-list {
+  &__item:nth-child(2) a {
+    opacity: 0.3;
   }
 }
 
