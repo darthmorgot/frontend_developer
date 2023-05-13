@@ -1,5 +1,6 @@
 // common
 html {
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -8,6 +9,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Rubik", "Arial", sans-serif;
@@ -64,6 +68,10 @@ button {
 .container {
   width: 1160px;
   margin: 0 auto;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .button {
