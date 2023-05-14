@@ -9,13 +9,12 @@ header.header.container
       input.form-search__input(type="text" name="search" placeholder="Текст поиска")
       button.form-search__btn(type="submit") Найти
     div.header-main__user
-      span.header-main__icon
       case namePage
         when 'Home': +auth-list("Войти")
         when 'Catalog': +auth-list("Коля Петухов", "Выйти")
     div.header-main__menu
-      a.header-main__link(href="#") Сравнить
-      a.header-main__link.header-main__link--icon(href="#") Корзина
+      a.header-main__link.header-main__link--icon-sort(href="#") Сравнить
+      a.header-main__link.header-main__link--icon-cart(href="#") Корзина
         span 2
 
   div.header__nav.nav
