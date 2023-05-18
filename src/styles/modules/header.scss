@@ -186,18 +186,21 @@
   }
 
   &__item {
+    width: 200px;
     margin-bottom: 15px;
   }
 
-  &__item:nth-child(3n+1) {
+  &__item--left-column {
     order: 1;
+    margin-right: 50px;
   }
 
-  &__item:nth-child(3n+2) {
+  &__item--middle-column {
     order: 2;
+    margin-right: 15px;
   }
 
-  &__item:nth-child(3n) {
+  &__item--right-column {
     order: 3;
   }
 
