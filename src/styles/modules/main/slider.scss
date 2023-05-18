@@ -2,18 +2,25 @@
 .slider {
   &__item {
     display: flex;
+    justify-content: space-between;
     background-image: linear-gradient(to bottom, $yellow 149px, $white 149px);
   }
 
   &__right {
     width: 560px;
+    padding-top: 42px;
   }
 
-  &__right span {
+  &__number {
+    margin: 0;
+    padding-top: 41px;
+    margin-bottom: -41px;
+    padding-right: 49px;
     font-weight: 700;
     font-size: 180px;
     line-height: 30px;
     color: $white;
+    text-align: right;
   }
 
   &__slogan {
@@ -25,6 +32,15 @@
     font-size: 18px;
     line-height: 30px;
     color: $dark;
+  }
+
+  &__button-wrapper {
+    padding-left: 40px;
+    margin-bottom: 75px;
+  }
+
+  &__button-wrapper a {
+    letter-spacing: 0.2em;
   }
 
   &__features td {
