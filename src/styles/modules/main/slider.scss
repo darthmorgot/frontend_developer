@@ -36,11 +36,15 @@
 
   &__button-wrapper {
     padding-left: 40px;
-    margin-bottom: 75px;
+    margin-bottom: 77px;
   }
 
   &__button-wrapper a {
     letter-spacing: 0.2em;
+  }
+
+  &__features {
+    border-collapse: collapse;
   }
 
   &__features td {
@@ -52,6 +56,25 @@
     font-weight: 400;
     line-height: 30px;
     color: $dark;
+  }
+
+  &__features--table-first-slide td:nth-child(2),
+  &__features--table-first-slide th:nth-child(2) {
+    padding-left: 20px;
+  }
+
+  &__features--table-second-slide th {
+    text-align: left;
+  }
+
+  &__features--table-third-slide td:nth-child(n+2),
+  &__features--table-third-slide th:nth-child(n+2) {
+    padding-left: 39px;
+  }
+
+  &__features--table-third-slide th:nth-child(3) {
+    padding-left: 40px;
+    text-align: left;
   }
 
   &__arrow {
