@@ -8,14 +8,58 @@
     list-style: none;
   }
 
-  &__link {
-    display: block;
-    width: 160px;
-    height: 253px;
+  &__item {
     background-image: linear-gradient(to bottom, $yellow 160px, $white 160px);
   }
 
+  &__item:hover {
+    background-image: linear-gradient(to bottom, $yellow-hover 160px, $white 160px);
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 160px;
+    height: 253px;
+    padding-left: 1px;
+    z-index: 2;
+  }
+
   &__link span {
+    align-self: start;
+  }
+
+  &__link--vr-mb img {
+    margin-bottom: 90px;
+  }
+
+  &__link--mono-selfy img {
+    margin-bottom: 48px;
+  }
+
+  &__link--action-cam img {
+    margin-bottom: 92px;
+  }
+
+  &__link--fitness-bracelet img {
+    margin-bottom: 93px;
+  }
+
+  &__link--smart-watch img {
+    margin-bottom: 91px;
+  }
+
+  &__link--quadrocopter img {
+    margin-bottom: 91px;
+  }
+
+  &__title {
+    width: 160px;
+    margin-top: -60px;
+    margin-bottom: 0;
     line-height: 24px;
     letter-spacing: -0.02em;
   }
