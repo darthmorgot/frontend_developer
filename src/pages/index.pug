@@ -105,19 +105,22 @@ block content
         h2.visually-hidden Сервисы
         div.services__tabs.tabs
           div.tabs__panel
-            button.tabs__switch.tabs__switch--active.font-raleway(type="button" data-tab="tabs__item--delivery") Доставка
-            button.tabs__switch.font-raleway(type="button" data-tab="tabs__item--warranty") Гарантия
-            button.tabs__switch.font-raleway(type="button" data-tab="tabs__item--credit") Кредит
+            div.tabs__switch-wrapper.tabs__switch--active
+              button.tabs__switch.font-raleway(type="button" data-tab="tabs__item--delivery") Доставка
+            div.tabs__switch-wrapper
+              button.tabs__switch.font-raleway(type="button" data-tab="tabs__item--warranty") Гарантия
+            div.tabs__switch-wrapper
+              button.tabs__switch.font-raleway(type="button" data-tab="tabs__item--credit") Кредит
           div.tabs__wrapper
             div.tabs__item.tabs__item--delivery.tabs__item--active
               h3.font-raleway Доставка
-              p Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+              p Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! Ведь <br> мы неплохо заработаем, поднимая его на ваш этаж.
             div.tabs__item.tabs__item--warranty
               h3.font-raleway Гарантия
-              p Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+              p Если из-за возгорания купленного у нас товара у вас <br> сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.
             div.tabs__item.tabs__item--credit
               h3.font-raleway Кредит
-              p Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
+              p Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас наиболее выгодные <br> условия кредита. Выгодные для банка, разумеется.
 
     section.main__delivery-order.delivery-order.container
       h2.visually-hidden Доставка редких товаров
