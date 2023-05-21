@@ -1,32 +1,40 @@
 // delivery
-.delivery-order__link {
-  display: flex;
-  justify-content: space-between;
-  height: 100px;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.2em;
-  background-color: $light;
-  text-transform: uppercase;
-}
+.delivery-order {
+  margin-bottom: 70px;
 
-.delivery-order__link::before {
-  content: "";
-  width: 125px;
-  height: 100px;
-  background: url('Images/icons/icon-delivery.svg') no-repeat center center;
-  background-color: $yellow;
-}
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-top: 4px;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.2em;
+    background-color: $light;
+    text-transform: uppercase;
+  }
 
-.delivery-order__link::after {
-  content: "";
-  width: 40px;
-  height: 40px;
-  position: relative;
-  top: 30px;
-  right: 42px;
-  background: url('Images/icons/icon-i.svg') no-repeat center center;
-  background-color: $grey;
-  opacity: 50%;
-  border-radius: 50%;
+  &__link::before {
+    content: "";
+    width: 125px;
+    height: 100px;
+    margin-top: -4px;
+    background: url('Images/icons/icon-delivery.svg') no-repeat center center;
+    background-color: $yellow;
+  }
+
+  &__link::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right: 43px;
+    margin-top: -4px;
+    margin-left: 80px;
+    background: url('Images/icons/icon-i.svg') no-repeat center center;
+    background-color: $grey;
+    opacity: 50%;
+    border-radius: 50%;
+  }
 }
