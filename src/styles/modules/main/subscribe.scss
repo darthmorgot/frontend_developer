@@ -1,5 +1,6 @@
 // subscribe
 .subscribe {
+  padding-bottom: 56px;
   background-color: $light;
   font-size: 18px;
   line-height: 30px;
@@ -7,16 +8,43 @@
 
   &__top {
     display: flex;
+    padding-top: 65px;
+    padding-left: 8px;
+    margin-bottom: 144px;
   }
 
   &__title {
+    width: 348px;
+    margin: 0;
+    margin-right: 252px;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
     color: $black;
   }
 
+  &__description {
+    width: 560px;
+    margin: 0;
+    padding-top: 9px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form-wrapper {
+    width: 810px;
+    margin: 0;
+  }
+
   &__form input {
+    width: 557px;
+    padding-top: 12px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-left: 18px;
     font-size: 18px;
     line-height: 30px;
     color: $dark;
@@ -30,16 +58,27 @@
   }
 
   &__btn {
+    width: 253px;
+    padding: 0;
+    padding-top: 14px;
+    padding-left: 6px;
+    padding-bottom: 15px;
     letter-spacing: 0.2em;
     border: 3px solid #c4c4c4;
     color: $black;
+  }
+
+  &__message {
+    padding-top: 12px;
+    padding-right: 1px;
   }
 
   &__message::before {
     content: "";
     display: inline-block;
     width: 16px;
-    height: 16px;
+    height: 12px;
+    margin-right: 16px;
     background: url('Images/icons/icon-tick-green.svg') no-repeat center center;
   }
 }
