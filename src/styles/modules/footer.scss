@@ -3,34 +3,45 @@
   background-color: $dark;
 }
 
-.footer-main {
+.footer .container {
   display: flex;
+  justify-content: space-between;
+  padding-top: 62px;
+}
+
+.footer-left {
+  width: 239px;
 
   &__contacts {
     font-style: normal;
     color: $white;
   }
 
-  &__services a {
-    letter-spacing: 0.2em;
-    color: $white;
-  }
-
-  &__phone a {
-    text-decoration-line: underline;
-    color: $white;
-  }
-}
-
-.footer-bottom {
-  display: flex;
-
-  &::before {
+  &::after {
     content: "";
     display: inline-block;
     width: 80px;
     height: 7px;
     background: url('Images/icons/icon-divider-yellow.svg') no-repeat center center;
+  }
+}
+
+.footer-middle {
+  width: 444px;
+
+  &__services a {
+    letter-spacing: 0.2em;
+    color: $white;
+  }
+
+}
+
+.footer-right {
+  width: 175px;
+
+  &__phone a {
+    text-decoration-line: underline;
+    color: $white;
   }
 
   &__link:hover {
