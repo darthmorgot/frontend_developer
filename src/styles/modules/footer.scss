@@ -1,18 +1,26 @@
 // footer
 .footer {
   background-color: $dark;
-}
 
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 62px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 62px;
+    padding-bottom: 61px;
+  }
+
+  &__logo {
+    margin-bottom: 35px;
+  }
 }
 
 .footer-left {
   width: 239px;
+  margin-right: 112px;
+  padding-left: 1px;
 
   &__contacts {
+    margin-bottom: 56px;
     font-style: normal;
     color: $white;
   }
@@ -28,20 +36,41 @@
 
 .footer-middle {
   width: 444px;
+  padding-top: 75px;
+
+  &__services {
+    margin-bottom: 61px;
+  }
 
   &__services a {
+    margin-right: 32px;
     letter-spacing: 0.2em;
     color: $white;
+    text-transform: uppercase;
+  }
+
+  &__services a:last-child {
+    margin-right: 0;
   }
 
 }
 
 .footer-right {
-  width: 175px;
+  width: 176px;
+  margin-left: auto;
+  padding-top: 78px;
+
+  &__phone {
+    margin-bottom: 63px;
+  }
 
   &__phone a {
     text-decoration-line: underline;
     color: $white;
+  }
+
+  &__link {
+    padding-left: 61px;
   }
 
   &__link:hover {
@@ -54,14 +83,23 @@
 
 .social {
   display: flex;
+  justify-content: center;
+  padding: 0;
+  padding-left: 14px;
+  margin: 0;
   list-style: none;
 
   &__item {
     width: 40px;
     height: 40px;
+    margin-right: 15px;
     border-radius: 50%;
     background-color: $white;
     opacity: 30%;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
   }
 
   &__link {
