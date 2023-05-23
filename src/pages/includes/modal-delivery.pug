@@ -5,20 +5,22 @@ section.modal-delivery
       span.visually-hidden Закрыть
   form.modal-delivery__form.form-order(action="https://echo.htmlacademy.ru" method="post")
     div.form-order__wrapper
-      p
+      p.form-order__name
         label(for="name") Ваше имя:
-        input#name.form-order__input.form-order__input--name(type="text" name="name" placeholder="Введите имя")
+        input#name.form-order__input(type="text" name="name" placeholder="Введите имя")
         span.form-order__error Добавьте имя
+      p.form-order__mail
         label(for="mail") Ваш e-mail:
-        input#mail.form-order__input.form-order__input--mail(type="email" name="email" placeholder="почта")
-        span.form-order__error Забавный у вас адрес
+        input#mail.form-order__input.form-order__input--border(type="email" name="email" placeholder="Введите e-mail")
+        span.form-order__error.form-order__error--color Забавный у вас адрес
       p
         label(for="order") Что нужно привезти:
-        textarea#order.form-order__message(name="message" placeholder="В свободной форме")
+        textarea#order.form-order__message(name="message" placeholder="В свободной форме" rows="1")
+      p.form-order__number
         label(for="number") Количество:
         span.form-order__info(data-info="Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.") i
-        span -
-        input#number.form-order__input(type="number" name="number" value="1")
-        span +
+        button.btn -
+        input#number.form-order__input.form-order__input--number(type="text" name="number" value="1")
+        button.btn +
     div.form-order__submit
       button.form-order__btn.btn.font-raleway(type="submit") Отправить
