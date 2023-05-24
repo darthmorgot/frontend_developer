@@ -7,8 +7,8 @@ block variables
 
 block content
   main.main.main-container
-    div.container
-      header.main__catalog-header.catalog-header
+    header.main__catalog-header.catalog-header
+      div.container
         h2.catalog-header__title.font-raleway Моноподы для селфи
         ul.catalog-header__breadcrumbs.breadcrumbs
           li.breadcrumbs__item
@@ -18,7 +18,8 @@ block content
           li.breadcrumbs__item
             a.breadcrumbs__link.breadcrumbs__link--current Моноподы для селфи
 
-      div.main__catalog.catalog
+    div.main__catalog.catalog
+      div.container
         section.catalog__filter.filter
           h2.filter__heading.font-raleway Фильтр:
           form.filter__form(action="https://echo.htmlacademy.ru" method="get")
@@ -71,7 +72,7 @@ block content
             button.filter__btn.font-raleway(type="submit") Показать
 
         section.catalog__products.products
-          h2.visually-hidden Список товаров
+          h2.visually-hidden(hidden) Список товаров
           div.products__sort
             span.font-raleway Сортировка:
             ul.products__sort-list
@@ -79,11 +80,11 @@ block content
                 a(href="#") Популярные
             div.products__sort-arrows
               button.products__sort-btn(type="button")
-                span.visually-hidden По возрастанию
+                span.visually-hidden(hidden) По возрастанию
                 svg(xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10")
                   path(fill="#000000" d="M5.5 0L0 10h11z")
               button.products__sort-btn(type="button")
-                span.visually-hidden По убыванию
+                span.visually-hidden(hidden) По убыванию
                 svg(xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10")
                   path(fill="#000000" d="M5.5 10L0 0h11")
           ul.products__list
