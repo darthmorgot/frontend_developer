@@ -1,13 +1,24 @@
 // catalog
 .catalog-header {
+  .container {
+    padding-top: 35px;
+    padding-left: 60px;
+    margin-bottom: 34px;
+  }
+
   &__title {
+    margin: 0;
+    margin-bottom: 15px;
     font-size: 50px;
     line-height: 50px;
   }
 
   &__breadcrumbs {
     display: flex;
+    justify-content: space-between;
+    width: 429px;
     padding: 0;
+    margin: 0;
     list-style: none;
   }
 }
@@ -15,7 +26,6 @@
 .breadcrumbs {
   &__link {
     position: relative;
-    margin-right: 40px;
     line-height: 19px;
   }
 
@@ -23,7 +33,7 @@
     content: "";
     position: absolute;
     top: 5px;
-    right: -20px;
+    right: -22px;
     width: 4px;
     height: 7px;
     opacity: 0.2;
@@ -36,10 +46,17 @@
 }
 
 .catalog {
-  display: flex;
+  background-color: $light;
+
+  .container {
+    display: flex;
+  }
 
   &__filter {
     width: 320px;
+    padding-top: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   &__products {
@@ -49,6 +66,7 @@
 
 .filter {
   &__heading {
+    margin: 0;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.2em;
@@ -105,15 +123,23 @@
 .products {
   &__sort {
     display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-bottom: 25px;
+    padding-right: 40px;
 
     span {
       font-size: 16px;
       line-height: 19px;
       letter-spacing: 0.2em;
+      text-transform: uppercase;
     }
   }
 
   &__sort-list {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -121,17 +147,14 @@
 
   &__sort-item {
     a {
-      position: relative;
-      padding-right: 30px;
+      display: inline-block;
+      width: 159px;
       font-size: 18px;
-      line-height: 30px;
     }
 
     a::after {
       content: "";
-      position: absolute;
-      top: 5px;
-      right: 0;
+      display: inline-block;
       width: 9px;
       height: 6px;
       background: url('Images/icons/icon-arrow-down-slim-alt.svg') no-repeat;
@@ -139,19 +162,26 @@
   }
 
   &__sort-btn {
+    width: 30px;
+    padding: 0;
     opacity: 0.2;
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
     padding: 0;
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
     list-style: none;
+    background-color: $white;
   }
 
   &__item {
     width: 360px;
-    margin-left: 40px;
   }
 
   &__button {
