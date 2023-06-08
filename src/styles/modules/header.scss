@@ -9,6 +9,7 @@
 
   &__main {
     display: flex;
+    margin-bottom: 30px;
   }
 
   &__nav {
@@ -24,14 +25,13 @@
 }
 
 .header-main {
-  &__user {
-    display: flex;
-  }
-
   &__auth {
     display: flex;
+    justify-content: space-between;
+    width: 230px;
     margin: auto;
     padding: 0;
+    padding-top: 6px;
     list-style: none;
     font-size: 18px;
     line-height: 30px;
@@ -110,9 +110,10 @@
   margin-right: 26px;
 
   &__input {
-    width: 359px;
-    padding: 10px;
-    padding-left: 48px;
+    width: 357px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    padding-left: 45px;
     line-height: 20px;
     border: 2px solid $black;
     border-right: none;
@@ -123,7 +124,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 14px;
+    top: 12px;
     left: 16px;
     width: 16px;
     height: 16px;
@@ -136,7 +137,8 @@
 
   &__btn {
     width: 160px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 6px;
     line-height: 20px;
     border: 2px solid $black;
     border-radius: 0px 50px 50px 0px;
@@ -216,18 +218,21 @@
   }
 
   &__services {
+    display: flex;
+    flex-wrap: wrap;
     width: 471px;
-    padding-top: 15px;
     margin-left: auto;
   }
 
   &__services a {
+    padding-top: 15px;
+    margin-right: 43px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    margin-right: 45px;
   }
 
   &__services a:last-child {
-    margin-right: 0;
+    margin-right: -6px;
+    padding-left: 6px;
   }
 }
