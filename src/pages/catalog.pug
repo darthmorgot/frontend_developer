@@ -72,7 +72,7 @@ block content
             button.filter__btn.font-raleway(type="submit") Показать
 
         section.catalog__products.products
-          h2.visually-hidden(hidden) Список товаров
+          h2.visually-hidden Список товаров
           div.products__sort
             span.font-raleway Сортировка:
             ul.products__sort-list
@@ -80,37 +80,37 @@ block content
                 a(href="#") Популярные
             div.products__sort-arrows
               button.products__sort-btn(type="button")
-                span.visually-hidden(hidden) По возрастанию
+                span.visually-hidden По возрастанию
                 svg(xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10")
                   path(fill="#000000" d="M5.5 0L0 10h11z")
               button.products__sort-btn(type="button")
-                span.visually-hidden(hidden) По убыванию
+                span.visually-hidden По убыванию
                 svg(xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10")
                   path(fill="#000000" d="M5.5 10L0 0h11")
           ul.products__list
             li.products__item.product.new
               img(src=require('../images/catalog/product-1.jpg') width="360" height="380" alt="Карточка товара Любительская селфи-палка.")
               div.product__info
-                h3.product__title Любительская селфи-палка
+                h3.product__title Любительская <br> селфи-палка
                 span.product__price 500 &#8381;
               a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
             li.products__item.product
               img(src=require('../images/catalog/product-2.jpg') width="360" height="380" alt="Карточка товара Профессиональная селфи-палка.")
               div.product__info
                 h3.product__title Профессиональная селфи-палка
-                span.product__price 1500 &#8381;
+                span.product__price 1&nbsp;500 &#8381;
               a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
             li.products__item.product
               img(src=require('../images/catalog/product-3.jpg') width="360" height="380" alt="Карточка товара Непотопляемая селфи-палка.")
               div.product__info
-                h3.product__title Непотопляемая селфи-палка
-                span.product__price 2500 &#8381;
+                h3.product__title Непотопляемая <br> селфи-палка
+                span.product__price 2&nbsp;500 &#8381;
               a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
             li.products__item.product.new
               img(src=require('../images/catalog/product-4.jpg') width="360" height="380" alt="Карточка товара Селфи-палка «Следуй за мной».")
               div.product__info
                 h3.product__title Селфи-палка «Следуй за мной»
-                span.product__price 1500 &#8381;
+                span.product__price 1&nbsp;500 &#8381;
               a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
           button.products__button.font-raleway(type="button") Загрузить ещё
           ul.catalog__pagination.pagination
