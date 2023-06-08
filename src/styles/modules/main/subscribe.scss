@@ -8,6 +8,7 @@
 
   &__top {
     display: flex;
+    // flex-wrap: wrap;
     padding-top: 65px;
     padding-left: 8px;
     margin-bottom: 144px;
@@ -27,6 +28,10 @@
     width: 560px;
     margin: 0;
     padding-top: 9px;
+
+    p {
+      margin: 0;
+    }
   }
 
   &__form {
