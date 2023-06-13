@@ -23,6 +23,32 @@
     font-size: 50px;
     line-height: 50px;
   }
+
+  &__close {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    margin-top: 9px;
+  }
+
+  &__close::before,
+  &__close::after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    width: 33px;
+    height: 3px;
+    background-color: $black;
+  }
+
+  &__close::before {
+    transform: rotate(45deg);
+  }
+
+  &__close::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .form-order {
@@ -134,30 +160,54 @@
     font-weight: 600;
 
     &:hover::before {
-      position: absolute;
       content: attr(data-info);
+      position: absolute;
+      top: calc(100% + 10px);
+      right: -55px;
       min-width: 200px;
       padding: 15px;
       background-color: $black;
-      transform: translate(-10%);
-      bottom: calc(100% + 10px);
       color: $white;
+      transform: translate(-10%);
+      z-index: 10;
     }
 
     &:hover::after {
-      position: absolute;
       content: " ";
-      bottom: calc(100% + 6px);
-      left: 10px;
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 7px;
       border: 5px solid $black;
       transform: rotate(45deg);
     }
   }
 
-  &__number button {
+  &__number-minus,
+  &__number-plus {
+    position: relative;
     width: 60px;
-    padding: 21px;
+    height: 60px;
+    padding: 0;
+    padding-top: 9px;
     background-color: $light;
+  }
+
+  &__number-minus::before,
+  &__number-plus::before,
+  &__number-plus::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin-left: 22px;
+    margin-top: -6px;
+    background-color: $black;
+  }
+
+  &__number-plus::after {
+    position: absolute;
+    top: 35px;
+    transform: rotate(90deg);
   }
 
   &__btn {
