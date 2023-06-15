@@ -3,7 +3,8 @@
   &__item {
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, $yellow 149px, $white 149px);
+    background-image: linear-gradient(to bottom, $yellow 150px, $white 150px);
+    margin-top: -36px;
   }
 
   &__right {
@@ -24,19 +25,22 @@
   }
 
   &__slogan {
+    margin-bottom: 28px;
     font-size: 50px;
     line-height: 50px;
   }
 
   &__desc {
+    margin-bottom: 61px;
     font-size: 18px;
     line-height: 30px;
+    letter-spacing: 0.06px;
     color: $dark;
   }
 
   &__button-wrapper {
     padding-left: 40px;
-    margin-bottom: 77px;
+    margin-bottom: 56px;
   }
 
   &__button-wrapper a {
@@ -48,6 +52,7 @@
   }
 
   &__features td {
+    padding-bottom: 11px;
     font-size: 36px;
     line-height: 30px;
   }
