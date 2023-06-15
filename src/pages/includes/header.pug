@@ -1,8 +1,8 @@
 header.header.container
   div.header__top.header-top
     case namePage
-        when 'Home': a.header__logo.logo: img(src=require('../../images/logo.svg') width="145" height="36" alt="Логотип интернет-магазина Девайс.")
-        when 'Catalog': a.header__logo.logo(href="../index.html"): img(src=require('../../images/logo.svg') width="145" height="36" alt="Логотип интернет-магазина Девайс.")
+      when 'Home': a.header__logo.logo: img(src=require('../../images/logo.svg') width="145" height="36" alt="Логотип интернет-магазина Девайс.")
+      when 'Catalog': a.header__logo.logo(href="../index.html"): img(src=require('../../images/logo.svg') width="145" height="36" alt="Логотип интернет-магазина Девайс.")
 
   div.header__main.header-main
     form.form-search.header-main__form-search(action="https://echo.htmlacademy.ru" method="post")
@@ -18,21 +18,23 @@ header.header.container
         span 2
 
   div.header__nav.nav
-    button.nav__btn.nav__btn--open.font-raleway Каталог товаров
+    div.nav__wrapper-btn-list
+      button.nav__btn.nav__btn--open.font-raleway Каталог товаров
+      div.nav__wrapper-list
+        ul.nav__list
+          li.nav__item.nav__item--left-column
+            a(href="#") Виртуальная реальность
+          li.nav__item.nav__item--left-column
+            a(href="pages/catalog.html") Моноподы для селфи
+          li.nav__item.nav__item--left-column
+            a(href="#") Экшн-камеры
+          li.nav__item.nav__item--middle-column
+            a(href="#") Фитнес-браслеты
+          li.nav__item.nav__item--middle-column
+            a(href="#") Умные часы
+          li.nav__item.nav__item--right-column
+            a(href="#") Квадрокоптеры
     div.nav__services.font-raleway
       a(href="#") Доставка
       a(href="#") Гарантия
       a(href="#") Контакты
-    ul.nav__list
-      li.nav__item.nav__item--left-column
-        a(href="#") Виртуальная реальность
-      li.nav__item.nav__item--left-column
-        a(href="pages/catalog.html") Моноподы для селфи
-      li.nav__item.nav__item--left-column
-        a(href="#") Экшен-камеры
-      li.nav__item.nav__item--middle-column
-        a(href="#") Фитнес-браслеты
-      li.nav__item.nav__item--middle-column
-        a(href="#") Умные часы
-      li.nav__item.nav__item--right-column
-        a(href="#") Квадрокоптеры
