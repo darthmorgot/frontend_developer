@@ -7,6 +7,7 @@ header.header.container
   div.header__main.header-main
     form.form-search.header-main__form-search(action="https://echo.htmlacademy.ru" method="post")
       input.form-search__input(type="text" name="search" placeholder="Текст поиска")
+      span.form-search__icon
       button.form-search__btn(type="submit") Найти
     div.header-main__user
       case namePage
@@ -15,7 +16,7 @@ header.header.container
     div.header-main__menu
       a.header-main__link.header-main__link--icon-sort(href="#") Сравнить
       a.header-main__link.header-main__link--icon-cart(href="#") Корзина
-        span 2
+        span.header-main__counter 2
 
   div.header__nav.nav
     div.nav__wrapper-btn-list
@@ -23,18 +24,20 @@ header.header.container
       div.nav__wrapper-list
         ul.nav__list
           li.nav__item.nav__item--left-column
-            a(href="#") Виртуальная реальность
+            a.nav__link(href="#") Виртуальная реальность
           li.nav__item.nav__item--left-column
-            a(href="pages/catalog.html") Моноподы для селфи
+            case namePage
+              when 'Home': a.nav__link(href="pages/catalog.html") Моноподы для селфи
+              when 'Catalog': a.nav__link.nav__link--current(href="pages/catalog.html") Моноподы для селфи
           li.nav__item.nav__item--left-column
-            a(href="#") Экшн-камеры
+            a.nav__link(href="#") Экшн-камеры
           li.nav__item.nav__item--middle-column
-            a(href="#") Фитнес-браслеты
+            a.nav__link(href="#") Фитнес-браслеты
           li.nav__item.nav__item--middle-column
-            a(href="#") Умные часы
+            a.nav__link(href="#") Умные часы
           li.nav__item.nav__item--right-column
-            a(href="#") Квадрокоптеры
+            a.nav__link(href="#") Квадрокоптеры
     div.nav__services.font-raleway
-      a(href="#") Доставка
-      a(href="#") Гарантия
-      a(href="#") Контакты
+      a.nav__service-link(href="#") Доставка
+      a.nav__service-link(href="#") Гарантия
+      a.nav__service-link(href="#") Контакты
