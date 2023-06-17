@@ -1,6 +1,6 @@
 // services
 .services {
-  background-image: linear-gradient(to bottom, $white 142px, $light 100px);
+  background-image: linear-gradient(to bottom, $white 102px, $light 102px);
   padding-bottom: 72px;
   margin-bottom: 70px;
 
@@ -19,8 +19,7 @@
   }
 
   &__switch-wrapper {
-    padding-top: 9px;
-    padding-bottom: 10px;
+    position: relative;
     padding-left: 2px;
     margin-bottom: 35px;
   }
@@ -30,15 +29,32 @@
   }
 
   &__switch {
+    position: relative;
     display: block;
     width: 160px;
     padding: 0;
+    padding-top: 10px;
+    padding-bottom: 9px;
     letter-spacing: 0.2em;
+    z-index: 1;
+  }
+
+  &__switch + .button-background {
+    width: 160px;
+    left: 2px;
   }
 
   &__switch--active {
     color: $yellow;
     background-color: $black;
+  }
+
+  &__switch--active > .button {
+    cursor: auto;
+  }
+
+  &__switch--active > .button-background {
+    display: none;
   }
 
   &__wrapper {

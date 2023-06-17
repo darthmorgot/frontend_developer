@@ -23,6 +23,10 @@
     background-image: linear-gradient(to bottom, $yellow-hover 160px, $white 160px);
   }
 
+  &__item:active {
+    opacity: 0.3;
+  }
+
   &__link {
     display: flex;
     flex-direction: column;
@@ -33,6 +37,10 @@
     height: 253px;
     padding-left: 1px;
     z-index: 2;
+  }
+
+  &__link:focus {
+    outline: 2px solid $violet;
   }
 
   &__link span {

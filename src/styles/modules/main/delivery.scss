@@ -34,7 +34,23 @@
     margin-left: 80px;
     background: url('Images/icons/icon-i.svg') no-repeat center center;
     background-color: $grey;
-    opacity: 50%;
+    opacity: 0.4;
     border-radius: 50%;
+  }
+
+  &__link:hover::before {
+    background-color: $yellow-hover;
+  }
+
+  &__link:hover::after {
+    opacity: 1;
+  }
+
+  &__link:active {
+    opacity: 0.3;
+  }
+
+  &__link:focus {
+    outline: 2px solid $violet;
   }
 }

@@ -75,7 +75,36 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 9px;
   text-transform: uppercase;
+}
+
+.button-background {
+  display: inline-block;
+  width: 220px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  position: absolute;
+  top: 16px;
+  left: 0;
+  background-color: $yellow;
+  transition: all 0.05s ease-in;
+}
+
+.button:hover + .button-background {
+  top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.button:active + .button-background {
+  background-color: $yellow-hover;
+}
+
+.button:focus {
+  outline: 2px solid $violet;
 }
 
 .new::after {

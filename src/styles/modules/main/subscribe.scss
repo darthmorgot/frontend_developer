@@ -46,19 +46,23 @@
   &__form input {
     width: 557px;
     padding-top: 12px;
-    padding-right: 0;
     padding-bottom: 10px;
+    padding-right: 18px;
     padding-left: 18px;
     font-size: 18px;
     line-height: 30px;
     color: $dark;
     border: none;
-    border-bottom: 3px solid #c4c4c4;
+    border-bottom: 3px solid $button-border-grey;
     background-color: $light;
   }
 
   &__form input::placeholder {
     opacity: 0.5;
+  }
+
+  &__form input:focus {
+    outline: 2px solid $violet;
   }
 
   &__btn {
@@ -68,8 +72,28 @@
     padding-left: 6px;
     padding-bottom: 15px;
     letter-spacing: 0.2em;
-    border: 3px solid #c4c4c4;
+    border: 3px solid $button-border-grey;
     color: $black;
+    text-transform: uppercase;
+  }
+
+  &__btn:hover {
+    background-color: $black;
+    color: $white;
+    border-color: $black;
+  }
+
+  &__btn:active {
+    color: rgba(255, 255, 255, 0.3);
+    border-color: $button-border-grey;
+  }
+
+  &__btn:focus {
+    outline: 2px solid $violet;
+  }
+
+  &__btn:disabled {
+    opacity: 0.3;
   }
 
   &__message {
