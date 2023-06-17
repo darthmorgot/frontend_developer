@@ -20,6 +20,7 @@ block content
           p.slider__desc Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           div.slider__button-wrapper
             a.button.font-raleway(href="#") Подробнее
+            span.button-background
           table.slider__features.slider__features--table-first-slide
             tr
               td 800 м
@@ -27,49 +28,49 @@ block content
             tr
               th Дальность полета
               th Радиус поражения
-      div.slider__item
-        div.slider__left
-          img(src=require('../images/slider/slider-2.png') width="560" height="560" alt="Слайд Фитнес-браслет.")
-        div.slider__right
-          p.slider__number 02
-          p.slider__slogan.font-raleway Худеем <br> правильно!
-          p.slider__desc Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-          div.slider__button-wrapper
-            a.button.font-raleway(href="#") Подробнее
-          table.slider__features.slider__features--table-second-slide
-            tr
-              td 48 часов
-            tr
-              th Без подзарядки
-      div.slider__item
-        div.slider__left
-          img(src=require('../images/slider/slider-3.png') width="560" height="560" alt="Слайд Палка для селфи.")
-        div.slider__right
-          p.slider__number 03
-          p.slider__slogan.font-raleway Делай селфи, <br> как Бен Стиллер!
-          p.slider__desc Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-          div.slider__button-wrapper
-            a.button.font-raleway(href="#") Подробнее
-          table.slider__features.slider__features--table-third-slide
-            tr
-              td 8,5 м
-              td 5 кг
-              td Карбон
-            tr
-              th Длина палки
-              th Вес палки
-              th Материал
+      //- div.slider__item
+      //-   div.slider__left
+      //-     img(src=require('../images/slider/slider-2.png') width="560" height="560" alt="Слайд Фитнес-браслет.")
+      //-   div.slider__right
+      //-     p.slider__number 02
+      //-     p.slider__slogan.font-raleway Худеем <br> правильно!
+      //-     p.slider__desc Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+      //-     div.slider__button-wrapper
+      //-       a.button.font-raleway(href="#") Подробнее
+      //-     table.slider__features.slider__features--table-second-slide
+      //-       tr
+      //-         td 48 часов
+      //-       tr
+      //-         th Без подзарядки
+      //- div.slider__item
+      //-   div.slider__left
+      //-     img(src=require('../images/slider/slider-3.png') width="560" height="560" alt="Слайд Палка для селфи.")
+      //-   div.slider__right
+      //-     p.slider__number 03
+      //-     p.slider__slogan.font-raleway Делай селфи, <br> как Бен Стиллер!
+      //-     p.slider__desc Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+      //-     div.slider__button-wrapper
+      //-       a.button.font-raleway(href="#") Подробнее
+      //-     table.slider__features.slider__features--table-third-slide
+      //-       tr
+      //-         td 8,5 м
+      //-         td 5 кг
+      //-         td Карбон
+      //-       tr
+      //-         th Длина палки
+      //-         th Вес палки
+      //-         th Материал
       div.slider__arrows
-        button.slider__arrow(type="button")
+        button.slider__arrow.slider__arrow--prev(type="button")
           span.visually-hidden Назад
-        button.slider__arrow.slider__arrow--right(type="button")
+        button.slider__arrow.slider__arrow--next(type="button")
           span.visually-hidden Вперед
       div.slider__dots
-        button.slider__dot.slider__dot--active.num_0(type="button")
+        button.slider__dot.slider__dot--active(type="button")
           span.visually-hidden Слайд 1
-        button.slider__dot.num_1(type="button")
+        button.slider__dot(type="button")
           span.visually-hidden Слайд 2
-        button.slider__dot.num_2(type="button")
+        button.slider__dot(type="button")
           span.visually-hidden Слайд 3
 
     section.main__categories.categories.container
@@ -106,21 +107,24 @@ block content
         div.services__tabs.tabs
           div.tabs__panel
             div.tabs__switch-wrapper.tabs__switch--active
-              button.tabs__switch.font-raleway(type="button" data-tab="tabs__item--delivery") Доставка
+              button.tabs__switch.button.font-raleway(type="button" data-tab="tabs__item--delivery") Доставка
+              span.button-background
             div.tabs__switch-wrapper
-              button.tabs__switch.font-raleway(type="button" data-tab="tabs__item--warranty") Гарантия
+              button.tabs__switch.button.font-raleway(type="button" data-tab="tabs__item--warranty") Гарантия
+              span.button-background
             div.tabs__switch-wrapper
-              button.tabs__switch.font-raleway(type="button" data-tab="tabs__item--credit") Кредит
+              button.tabs__switch.button.font-raleway(type="button" data-tab="tabs__item--credit") Кредит
+              span.button-background
           div.tabs__wrapper
             div.tabs__item.tabs__item--delivery.tabs__item--active
               h3.font-raleway Доставка
               p Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! Ведь <br> мы неплохо заработаем, поднимая его на ваш этаж.
-            div.tabs__item.tabs__item--warranty
-              h3.font-raleway Гарантия
-              p Если из-за возгорания купленного у нас товара у вас <br> сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.
-            div.tabs__item.tabs__item--credit
-              h3.font-raleway Кредит
-              p Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас наиболее выгодные <br> условия кредита. Выгодные для банка, разумеется.
+            //- div.tabs__item.tabs__item--warranty
+            //-   h3.font-raleway Гарантия
+            //-   p Если из-за возгорания купленного у нас товара у вас <br> сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.
+            //- div.tabs__item.tabs__item--credit
+            //-   h3.font-raleway Кредит
+            //-   p Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас наиболее выгодные <br> условия кредита. Выгодные для банка, разумеется.
 
     section.main__delivery-order.delivery-order.container
       h2.visually-hidden Доставка редких товаров
@@ -135,7 +139,9 @@ block content
           li Меловые линии
           li СДИК
           li ТоксБерри
-        a.about-us__btn.button.font-raleway(href="#") Подробнее о нас
+        div.about-us__btn-wrapper
+          a.about-us__btn.button.font-raleway(href="#") Подробнее о нас
+          span.button-background
       section.main__contacts.contacts
         h2.contacts__title.font-raleway Контакты
         p.contacts__text Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.
@@ -146,7 +152,9 @@ block content
         ul.contacts__schedule.schedule
           li.schedule__item пн—пт: с 10:00 до 22:00
           li.schedule__item сб—вс: с 10:00 до 19:00
-        a.contacts__btn.button.font-raleway(href="#") Напишите нам
+        div.contacts__btn-wrapper
+          a.contacts__btn.button.font-raleway(href="#") Напишите нам
+          span.button-background
 
     section.main__subscribe.subscribe
       div.container
@@ -159,7 +167,7 @@ block content
             label.subscribe__field.field
               span.visually-hidden Ваш e-mail
               input.field__input(type="email" name="email" placeholder="Ваш e-mail")
-            button.subscribe__btn.button.font-raleway(type="submit") Подписаться
+            button.subscribe__btn.font-raleway(type="submit") Подписаться
           span.subscribe__message Это бесплатно
 
 block modal
