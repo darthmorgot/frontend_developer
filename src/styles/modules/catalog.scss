@@ -43,6 +43,14 @@
   &__link--current::after {
     display: none;
   }
+
+  &__link:hover {
+    opacity: 0.6;
+  }
+
+  &__link:focus {
+    outline: 2px solid $violet;
+  }
 }
 
 .catalog {
@@ -140,10 +148,16 @@
     margin-bottom: 0;
   }
 
+  &__btn-wrapper {
+    position: relative;
+  }
+
   &__btn {
+    position: relative;
     width: 220px;
-    padding: 10px 5px 10px 10px;
+    padding: 10px 5px 9px 10px;
     letter-spacing: 0.2em;
+    z-index: 1;
   }
 }
 
@@ -188,12 +202,41 @@
       height: 6px;
       background: url('Images/icons/icon-arrow-down-slim-alt.svg') no-repeat;
     }
+
+    a:hover {
+    opacity: 0.6;
+    }
+
+    a:focus {
+      outline: 2px solid $violet;
+    }
   }
 
   &__sort-btn {
     width: 30px;
     padding: 0;
     opacity: 0.2;
+  }
+
+  &__sort-btn:hover {
+    opacity: 0.5;
+  }
+
+  &__sort-btn:focus {
+    opacity: 1;
+    outline: 2px solid $violet;
+
+    svg {
+      opacity: 0.2;
+    }
+  }
+
+  &__sort-btn:active {
+    opacity: 1;
+
+    svg {
+      opacity: 1;
+    }
   }
 
   &__list {

@@ -26,8 +26,8 @@
 
   &__close {
     position: relative;
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
     padding: 0;
     margin-top: 9px;
   }
@@ -36,7 +36,8 @@
   &__close::after {
     content: "";
     position: absolute;
-    right: -4px;
+    top: 13px;
+    right: -3px;
     width: 33px;
     height: 3px;
     background-color: $black;
@@ -49,6 +50,10 @@
   &__close::after {
     transform: rotate(-45deg);
   }
+
+  &__close:focus {
+    outline: 2px solid $violet;
+  }
 }
 
 .form-order {
@@ -56,12 +61,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 37px;
   }
 
-  &__wrapper p {
+  &__wrapper div {
     margin: 0;
     margin-bottom: 41px;
     position: relative;
+  }
+
+  &__wrapper div:nth-child(3),
+  &__wrapper div:nth-child(4) {
+    margin-bottom: 0;
   }
 
   &__name,
@@ -77,8 +88,7 @@
     position: absolute;
     top: 58px;
     right: 20px;
-    background: url('Images/icons/icon-login.svg') no-repeat center center;
-    opacity: 0.25;
+    background: url('Images/icons/icon-login-light.svg') no-repeat center center;
   }
 
   &__mail::after {
@@ -90,7 +100,6 @@
     top: 58px;
     right: 20px;
     background: url('Images/icons/icon-letter.svg') no-repeat center center;
-    opacity: 0.25;
   }
 
   &__number {
@@ -131,22 +140,23 @@
     opacity: 0.3;
   }
 
-  &__input--border {
-    border: 2px solid $error;
+  &__input:hover,
+  &__message:hover {
+    background-color: $grey;
   }
 
-  &__error {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    font-size: 14px;
-    line-height: 20px;
-    color: $error;
+  &__input:focus,
+  &__message:focus {
+    outline: 2px solid $violet;
   }
 
-  &__input--number {
-    width: 60px;
-    text-align: center;
+  &__input:disabled,
+  &__message:disabled {
+    opacity: 0.3;
+  }
+
+  &__number-wrapper {
+    border: 2px solid $light;
   }
 
   &__info {
@@ -158,35 +168,51 @@
     border-radius: 50%;
     background: $yellow;
     font-weight: 600;
+  }
 
-    &:hover::before {
-      content: attr(data-info);
-      position: absolute;
-      top: calc(100% + 10px);
-      right: -55px;
-      min-width: 200px;
-      padding: 15px;
-      background-color: $black;
-      color: $white;
-      transform: translate(-10%);
-      z-index: 10;
-    }
+  &__info-popup {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: -35px;
+    min-width: 200px;
+    padding: 15px;
+    background-color: $black;
+    color: $white;
+    z-index: 10;
+    font-weight: 400;
+  }
 
-    &:hover::after {
-      content: " ";
-      position: absolute;
-      top: calc(100% + 6px);
-      left: 7px;
-      border: 5px solid $black;
-      transform: rotate(45deg);
-    }
+  &__info-popup::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: 42px;
+    border: 5px solid $black;
+    transform: rotate(45deg);
+  }
+
+  &__info:focus {
+    outline: 2px solid $violet;
+  }
+
+  &__info:hover &__info-popup,
+  &__info:focus-within &__info-popup {
+    display: block;
+  }
+
+  &__input--number {
+    width: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
   }
 
   &__number-minus,
   &__number-plus {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 58px;
+    height: 56px;
     padding: 0;
     padding-top: 9px;
     background-color: $light;
@@ -196,25 +222,55 @@
   &__number-plus::before,
   &__number-plus::after {
     content: "";
-    display: block;
+    position: absolute;
+    top: 27px;
+    left: 20px;
     width: 16px;
     height: 2px;
-    margin-left: 22px;
-    margin-top: -6px;
     background-color: $black;
   }
 
+  &__number-plus::before,
   &__number-plus::after {
-    position: absolute;
-    top: 35px;
+    left: 22px;
+  }
+
+  &__number-plus::after {
+    top: 27px;
     transform: rotate(90deg);
   }
 
+  &__number-minus:focus,
+  &__number-plus:focus {
+    outline: 2px solid $violet;
+  }
+
+  &__submit {
+    position: relative;
+  }
+
   &__btn {
+    position: relative;
     width: 200px;
-    padding-top: 6px;
     padding-left: 10px;
-    padding-bottom: 8px;
     letter-spacing: 0.2em;
+    z-index: 1;
+  }
+
+  &__submit > .button-background {
+    width: 200px;
+  }
+
+  &__error-border {
+    border: 2px solid $error;
+  }
+
+  &__error-message {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: $error;
   }
 }

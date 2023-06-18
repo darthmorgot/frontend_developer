@@ -48,6 +48,15 @@
     background-color: $white;
     text-align: center;
   }
+
+  &__btn:hover {
+    background-color: $yellow;
+  }
+
+  &__btn:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: $yellow;
+  }
 }
 
 .cart-list {
@@ -63,7 +72,7 @@
 
   &__link {
     display: flex;
-    margin-right: 87px;
+    margin-right: 50px;
     color: $white;
 
     img {
@@ -71,18 +80,46 @@
     }
   }
 
+  &__link:hover {
+    opacity: 0.6;
+  }
+
+  &__link:active {
+    opacity: 0.3;
+  }
+
+  &__link:focus {
+    outline: 2px solid $violet;
+  }
+
   &__delete {
-    width: 10px;
-    height: 10px;
+    position: relative;
+    width: 13px;
+    height: 13px;
+    margin-top: -1px;
+    margin-right: -1px;
+  }
+
+  &__delete:hover {
+    opacity: 0.6;
+  }
+
+  &__delete:active {
+    opacity: 0.3;
+  }
+
+  &__delete:focus {
+    outline: 2px solid $violet;
   }
 
   &__delete::before,
   &__delete::after {
     content: "";
     position: absolute;
-    right: 19px;
+    top: 6px;
+    right: 0;
     width: 12px;
-    height: 2px;
+    height: 1px;
     background-color: $white;
   }
 
