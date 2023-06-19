@@ -1,4 +1,4 @@
-// catalog
+// Catalog
 .catalog-header {
   .container {
     padding-top: 36px;
@@ -23,6 +23,7 @@
   }
 }
 
+// Breadcrumbs
 .breadcrumbs {
   &__link {
     position: relative;
@@ -53,6 +54,7 @@
   }
 }
 
+// Catalog block
 .catalog {
   background-color: $light;
 
@@ -74,6 +76,7 @@
   }
 }
 
+// Filter
 .filter {
   &__heading {
     margin: 0;
@@ -161,6 +164,7 @@
   }
 }
 
+// Products list
 .products {
   &__sort {
     display: flex;
@@ -269,14 +273,79 @@
     line-height: 19px;
     letter-spacing: 0.2em;
   }
+
+  &__button:hover {
+    border-color: $black;
+  }
+
+  &__button:active {
+    opacity: 0.3;
+  }
+
+  &__button:focus {
+    outline: 2px solid $violet;
+  }
 }
 
+// Product card
 .product {
   position: relative;
-  margin-bottom: 44px;
+  margin-bottom: 41px;
+  padding-bottom: 3px;
 
-  img {
-    margin-bottom: 27px;
+  &:hover &__img-wrapper {
+    border-color: #000;
+  }
+
+  &:hover.new::after,
+  &:hover img,
+  &:hover &__title {
+    opacity: 0.5;
+  }
+
+  &:hover &__btn-wrapper {
+    display: block;
+  }
+
+  &:focus {
+    outline: 2px solid $violet;
+  }
+
+  &:focus-within &__btn-wrapper {
+    display: block;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    margin-bottom: 32px;
+    border: 1px solid transparent;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__btn-wrapper {
+    display: none;
+  }
+
+  &__btn {
+    position: absolute;
+    width: 220px;
+    letter-spacing: 0.2em;
+    z-index: 1;
+    text-align: center;
+  }
+
+  &__btn,
+  &__btn + .button-background {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__btn:hover + .button-background {
+    top: 50%;
   }
 
   &__info {
@@ -299,44 +368,80 @@
     line-height: 21px;
     color: $dark;
   }
-
-  &__btn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    letter-spacing: 0.2em;
-  }
 }
 
+// Pagination
 .pagination {
   display: flex;
-  justify-content: space-between;
   width: 760px;
-  padding: 25px;
   margin-right: 40px;
   margin-left: 40px;
+  padding: 0;
   list-style: none;
   background-color: $lightgrey;
 
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
   &__item:first-child {
-    margin-right: 155px;
+    margin-right: 147px;
   }
 
   &__item:last-child {
-    margin-right: -4px;
-    margin-left: 152px;
+    margin-left: 145px;
   }
 
   &__link {
+    width: 40px;
+    padding: 10px;
     color: $dark;
     opacity: 0.3;
+    text-align: center;
+  }
+
+  &__link--current {
+    opacity: 0.6;
+  }
+
+  &__link:hover {
+    opacity: 1;
+  }
+
+  &__link:focus {
+    color: rgba(68, 68, 68, 0.3);
+    opacity: 1;
+    outline: 2px solid $violet;
   }
 
   &__link--prev,
   &__link--next {
+    display: block;
+    width: 127px;
+    padding: 25px;
     letter-spacing: 0.2em;
     color: $black;
     opacity: 1;
     text-transform: uppercase;
+  }
+
+  &__link--next {
+    width: 141px;
+  }
+
+  &__link--prev:hover,
+  &__link--next:hover {
+    background-color: $grey;
+  }
+
+  &__link--prev:focus,
+  &__link--next:focus {
+    color: $black;
+  }
+
+  &__link--prev:active,
+  &__link--next:active {
+    color: rgba(0, 0, 0, 0.3);
   }
 }
