@@ -90,30 +90,42 @@ block content
                 svg(xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" aria-hidden="true" focusable="false")
                   path(fill="#000000" d="M5.5 10L0 0h11")
           ul.products__list
-            li.products__item.product.new
-              img(src=require('../images/catalog/product-1.jpg') width="360" height="380" alt="Карточка товара Любительская селфи-палка.")
+            li.products__item.product.new(tabindex="0")
+              div.product__img-wrapper
+                img(src=require('../images/catalog/product-1.jpg') width="360" height="380" alt="Карточка товара Любительская селфи-палка.")
+                div.product__btn-wrapper
+                  a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
+                  span.button-background
               div.product__info
                 h3.product__title Любительская <br> селфи-палка
                 span.product__price 500 &#8381;
-              a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
-            li.products__item.product
-              img(src=require('../images/catalog/product-2.jpg') width="360" height="380" alt="Карточка товара Профессиональная селфи-палка.")
+            li.products__item.product(tabindex="0")
+              div.product__img-wrapper
+                img(src=require('../images/catalog/product-2.jpg') width="360" height="380" alt="Карточка товара Профессиональная селфи-палка.")
+                div.product__btn-wrapper
+                  a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
+                  span.button-background
               div.product__info
                 h3.product__title Профессиональная селфи-палка
                 span.product__price 1&nbsp;500 &#8381;
-              a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
-            li.products__item.product
-              img(src=require('../images/catalog/product-3.jpg') width="360" height="380" alt="Карточка товара Непотопляемая селфи-палка.")
+            li.products__item.product(tabindex="0")
+              div.product__img-wrapper
+                img(src=require('../images/catalog/product-3.jpg') width="360" height="380" alt="Карточка товара Непотопляемая селфи-палка.")
+                div.product__btn-wrapper
+                  a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
+                  span.button-background
               div.product__info
                 h3.product__title Непотопляемая <br> селфи-палка
                 span.product__price 2&nbsp;500 &#8381;
-              a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
-            li.products__item.product.new
-              img(src=require('../images/catalog/product-4.jpg') width="360" height="380" alt="Карточка товара Селфи-палка «Следуй за мной».")
+            li.products__item.product.new(tabindex="0")
+              div.product__img-wrapper
+                img(src=require('../images/catalog/product-4.jpg') width="360" height="380" alt="Карточка товара Селфи-палка «Следуй за мной».")
+                div.product__btn-wrapper
+                  a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
+                  span.button-background
               div.product__info
                 h3.product__title Селфи-палка «Следуй за мной»
                 span.product__price 1&nbsp;500 &#8381;
-              a.button.product__btn.product__btn--detailed.font-raleway(href="#") Подробнее
           button.products__button.font-raleway(type="button") Загрузить ещё
           ul.catalog__pagination.pagination
             li.pagination__item
