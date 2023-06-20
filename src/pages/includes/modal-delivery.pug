@@ -7,11 +7,11 @@ section.modal-delivery
     div.form-order__wrapper
       div.form-order__name
         label(for="name") Ваше имя:
-        input#name.form-order__input(type="text" name="name" placeholder="Введите имя")
+        input#name.form-order__input(type="text" name="name" placeholder="Введите имя" required)
         span.form-order__error-message(hidden) Добавьте имя
       div.form-order__mail
         label(for="mail") Ваш e-mail:
-        input#mail.form-order__input.form-order__error-border(type="email" name="email" placeholder="Введите e-mail")
+        input#mail.form-order__input.form-order__error-border(type="email" name="email" placeholder="Введите e-mail" required)
         span.form-order__error-message.form-order__error--color Забавный у вас адрес
       div
         label(for="order") Что нужно привезти:
@@ -23,7 +23,7 @@ section.modal-delivery
         div.form-order__number-wrapper
           button.form-order__number-minus.btn(type="button")
             span.visually-hidden Минус одна единица
-          input#number.form-order__input.form-order__input--number(type="text" name="number" value="1")
+          input#number.form-order__input.form-order__input--number(type="text" name="number" value="1" tabindex="-1")
           button.form-order__number-plus.btn(type="button")
             span.visually-hidden Плюс одна единица
     div.form-order__submit
