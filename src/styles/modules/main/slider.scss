@@ -89,20 +89,22 @@
     text-align: left;
   }
 
-  &__arrow {
+  &__arrows {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     top: 211px;
+    width: 530px;
+    margin-left: 30px;
+  }
+
+  &__arrow {
     width: 20px;
     height: 60px;
     background: url('Images/icons/icon-slider-arrow.svg') no-repeat center center;
   }
 
-  &__arrow--prev {
-    left: 30px;
-  }
-
   &__arrow--next {
-    left: 540px;
     transform: rotate(180deg);
   }
 
@@ -126,7 +128,6 @@
   &__dot:last-child {
     margin-right: 0;
   }
-
 
   &__dot--active {
     background: $black;
