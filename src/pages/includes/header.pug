@@ -6,7 +6,8 @@ header.header.container
 
   div.header__main.header-main
     form.form-search.header-main__form-search(action="https://echo.htmlacademy.ru" method="post")
-      input.form-search__input(type="text" name="search" placeholder="Текст поиска")
+      label(for="search")
+      input#search.form-search__input(type="search" name="search" placeholder="Текст поиска")
       span.form-search__icon
       button.form-search__btn(type="submit") Найти
     div.header-main__user
@@ -17,6 +18,7 @@ header.header.container
       a.header-main__link.header-main__link--icon-sort(href="#") Сравнить
       a.header-main__link.header-main__link--icon-cart(href="#") Корзина
         span.header-main__counter 2
+      include popup-cart
 
   div.header__nav.nav
     div.nav__wrapper-btn-list
