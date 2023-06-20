@@ -159,6 +159,7 @@
     border: 2px solid $light;
   }
 
+// Info popup
   &__info {
     display: inline-block;
     position: absolute;
@@ -201,11 +202,16 @@
     display: block;
   }
 
+// Plus-minus buttons
   &__input--number {
     width: 60px;
     padding-top: 16px;
     padding-bottom: 16px;
     text-align: center;
+  }
+
+  &__input--number:hover {
+    background-color: $light;
   }
 
   &__number-minus,
@@ -240,11 +246,28 @@
     transform: rotate(90deg);
   }
 
+  &__number-minus:hover,
+  &__number-plus:hover {
+    background-color: $lightgrey;
+  }
+
   &__number-minus:focus,
   &__number-plus:focus {
     outline: 2px solid $violet;
   }
 
+  &__number-minus:active::before,
+  &__number-plus:active::before,
+  &__number-plus:active::after {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &__number-minus:disabled,
+  &__number-plus:disabled {
+    opacity: 0.3;
+  }
+
+// Submit button
   &__submit {
     position: relative;
   }
@@ -261,6 +284,7 @@
     width: 200px;
   }
 
+// Error style
   &__error-border {
     border: 2px solid $error;
   }
