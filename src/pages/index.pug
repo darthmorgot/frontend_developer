@@ -166,10 +166,9 @@ block content
           p.subscribe__form-wrapper
             label.subscribe__field.field
               span.visually-hidden Ваш e-mail
-              input.field__input(type="email" name="email" placeholder="Ваш e-mail")
+              input.field__input(type="email" name="email" placeholder="Ваш e-mail" required)
             button.subscribe__btn.font-raleway(type="submit") Подписаться
           span.subscribe__message Это бесплатно
 
 block modal
-  include includes/popup-cart
   include includes/modal-delivery
