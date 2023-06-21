@@ -43,7 +43,7 @@
     margin: 0;
   }
 
-  &__form input {
+  &__input {
     width: 557px;
     padding-top: 12px;
     padding-bottom: 10px;
@@ -57,12 +57,21 @@
     background-color: $light;
   }
 
-  &__form input::placeholder {
+  &__input--error {
+    border-color: $error;
+  }
+
+  &__input::placeholder {
     opacity: 0.5;
   }
 
-  &__form input:focus {
-    outline: 2px solid $violet;
+  &__input:focus {
+    background-color: $grey;
+    outline: none;
+  }
+
+  &__input:disabled {
+    opacity: 0.3;
   }
 
   &__btn {
