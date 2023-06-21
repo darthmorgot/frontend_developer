@@ -28,47 +28,62 @@ block content
               legend Стоимость
               div.filter__range
                 span.visually-hidden Шкала цен с двумя ползунками
-                div.filter__scale
-                  span.filter__bar
-                div.filter__control.filter__control--min(tabindex="0")
-                  span.visually-hidden Ползунок минимума
-                div.filter__control.filter__control--max(tabindex="0")
-                  span.visually-hidden Ползунок максимума
-              div.filter__output
-                label.visually-hidden Нижняя цена
-                  input.filter__input(type="text" name="price_lower" value="0")
-                span.filter__separator —
-                label.visually-hidden Верхняя цена
-                  input.filter__input(type="text" name="price_upper" value="5000")
+                div.filter__bar(style="width: 119px;")
+                  div.filter__control-wrapper.filter__control-wrapper--min
+                    button.filter__control.filter__control--min(type="button" tabindex="0")
+                      span.visually-hidden Изменить минимальную цену
+                    label.filter__label от
+                      input.filter__input(type="number" name="price_lower" value="0")
+                      span.focus
+                  div.filter__control-wrapper.filter__control-wrapper--max
+                    button.filter__control.filter__control--max(type="button" tabindex="0")
+                      span.visually-hidden Изменить максимальную цену
+                    label.filter__label до
+                      input.filter__input(type="number" name="price_upper" value="5000")
+                      span.focus
             div.filter__divider
             fieldset.filter__color
               legend Цвет
-              ul.filter__color-list
-                li.filter__color-item
-                  input#filter-black.visually-hidden(type="checkbox" name="black" checked)
-                  label(for="filter-black") Черный
-                li.filter__color-item
-                  input#filter-white.visually-hidden(type="checkbox" name="white" checked)
-                  label(for="filter-white") Белый
-                li.filter__color-item
-                  input#filter-blue.visually-hidden(type="checkbox" name="blue")
-                  label(for="filter-blue") Синий
-                li.filter__color-item
-                  input#filter-red.visually-hidden(type="checkbox" name="red")
-                  label(for="filter-red") Красный
-                li.filter__color-item
-                  input#filter-pink.visually-hidden(type="checkbox" name="pink")
-                  label(for="filter-pink") Розовый
+              ul.filter__list.list
+                li.list__item
+                  label.list__label
+                    input.visually-hidden.list__input(type="checkbox" name="black" checked)
+                    span.list__mark
+                    span.list__name Черный
+                li.list__item
+                  label.list__label
+                    input.visually-hidden.list__input(type="checkbox" name="white" checked)
+                    span.list__mark
+                    span.list__name Белый
+                li.list__item
+                  label.list__label
+                    input.visually-hidden.list__input(type="checkbox" name="blue")
+                    span.list__mark
+                    span.list__name Синий
+                li.list__item
+                  label.list__label
+                    input.visually-hidden.list__input(type="checkbox" name="red")
+                    span.list__mark
+                    span.list__name Красный
+                li.list__item
+                  label.list__label
+                    input.visually-hidden.list__input(type="checkbox" name="pink")
+                    span.list__mark
+                    span.list__name Розовый
             div.filter__divider
             fieldset.filter__bluetooth
               legend Bluetooth
-              ul.filter__bluetooth-list
-                li.filter__bluetooth-item
-                  input#filter-yes.visually-hidden(type="radio" name="bluetooth" value="yes" checked)
-                  label(for="filter-yes") Есть
-                li.filter__bluetooth-item
-                  input#filter-no.visually-hidden(type="radio" name="bluetooth" value="no")
-                  label(for="filter-no") Нет
+              ul.filter__list.list
+                li.list__item.list__item--mb
+                  label.list__label
+                    input.visually-hidden.list__input(type="radio" name="bluetooth" value="yes" checked)
+                    span.list__mark
+                    span.list__name Есть
+                li.list__item
+                  label.list__label
+                    input.visually-hidden.list__input(type="radio" name="bluetooth" value="no")
+                    span.list__mark
+                    span.list__name Нет
             div.filter__btn-wrapper
               button.filter__btn.button.font-raleway(type="submit") Показать
               span.button-background
