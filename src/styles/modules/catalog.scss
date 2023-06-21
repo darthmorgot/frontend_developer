@@ -49,6 +49,10 @@
     opacity: 0.6;
   }
 
+  &__link:active {
+    opacity: 0.3;
+  }
+
   &__link:focus {
     outline: 2px solid $violet;
   }
@@ -87,12 +91,14 @@
     text-transform: uppercase;
   }
 
-  &__form legend {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: -0.02em;
+  &__form {
+    legend {
+      margin-bottom: 28px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: -0.02em;
+    }
   }
 
   &__divider {
@@ -109,48 +115,134 @@
     border: none;
   }
 
+// Price select
   &__price {
-    margin-bottom: 56px;
+    margin-bottom: 52px;
   }
 
+  &__range {
+    position: relative;
+    height: 2px;
+    margin-bottom: 14px;
+    background-color: $grey;
+  }
+
+  &__bar {
+    position: absolute;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &__control-wrapper {
+    position: absolute;
+  }
+
+  &__control-wrapper--min {
+    top: -14px;
+    left: -13px;
+  }
+
+  &__control-wrapper--max {
+    top: -14px;
+    right: -38px;
+  }
+
+  &__control {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 6px;
+    border-radius: 50%;
+    border: 2px solid $black;
+    background-color: $light;
+  }
+
+  &__control--min {
+    margin-left: 4px;
+  }
+
+  &__control--max {
+    margin-left: 22px;
+    margin-bottom: 2px;
+  }
+
+  &__control:hover {
+    border-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__control:active {
+    background-color: $black;
+  }
+
+  &__control:focus::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 20px;
+    height: 20px;
+    outline: 2px solid $violet;
+  }
+
+  &__label {
+    display: flex;
+    position: relative;
+    color: $lightblack;
+  }
+
+  &__input {
+    width: 50px;
+    font-size: 15px;
+    line-height: 18px;
+    color: $lightblack;
+    border: none;
+    background-color: transparent;
+    appearance: textfield;
+  }
+
+  &__input::-webkit-outer-spin-button,
+  &__input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &__input:focus {
+    outline: none;
+  }
+
+  &__input:focus + .focus::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 72px;
+    height: 20px;
+    outline: 2px solid $violet;
+  }
+
+// Color and blutooth select
   &__color {
     margin-bottom: 33px;
   }
 
   &__bluetooth {
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
 
-  &__input {
-    font-size: 15px;
-    line-height: 18px;
-    opacity: 0.3;
-  }
-
-  &__color-list,
-  &__bluetooth-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-    label {
-      margin-left: 20px;
-      line-height: 19px;
+  &__color,
+  &__bluetooth {
+    legend {
+      margin-bottom: 20px;
     }
   }
 
-  &__color-item {
-    margin-bottom: 17px;
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
 
-  &__bluetooth-item {
-    margin-bottom: 20px;
-  }
-
-  &__color-item:last-child {
-    margin-bottom: 0;
-  }
-
+// Filter button
   &__btn-wrapper {
     position: relative;
   }
@@ -161,6 +253,68 @@
     padding: 10px 5px 9px 10px;
     letter-spacing: 0.2em;
     z-index: 1;
+  }
+}
+
+// Color and blutooth select
+.list {
+  &__item {
+    margin-bottom: 17px;
+  }
+
+  &__item--mb {
+    margin-bottom: 20px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  &__label:hover {
+    opacity: 0.6;
+  }
+
+  &__label:active {
+    opacity: 0.3;
+  }
+
+  &__mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: -1px;
+    background-image: url('Images/icons/icon-checkbox-off.svg');
+  }
+
+  &__input[type="radio"] + &__mark {
+    background-image: url('Images/icons/icon-radio-off.svg');
+  }
+
+  &__input[type="checkbox"]:checked + &__mark {
+    background-image: url('Images/icons/icon-checkbox-on.svg');
+  }
+
+  &__input[type="radio"]:checked + &__mark {
+    background-image: url('Images/icons/icon-radio-on.svg');
+  }
+
+  &__input:focus + &__mark {
+    outline: 2px solid $violet;
+  }
+
+  &__input:disabled + &__mark,
+  &__input:disabled ~ &__name {
+    opacity: 0.1;
   }
 }
 
