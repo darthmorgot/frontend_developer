@@ -65,13 +65,16 @@ block content
           span.visually-hidden Назад
         button.slider__arrow.slider__arrow--next(type="button")
           span.visually-hidden Вперед
-      div.slider__dots
-        button.slider__dot.slider__dot--active(type="button")
-          span.visually-hidden Слайд 1
-        button.slider__dot(type="button")
-          span.visually-hidden Слайд 2
-        button.slider__dot(type="button")
-          span.visually-hidden Слайд 3
+      ol.slider__dots.slider-dots
+        li.slider-dots__item
+          button.slider-dots__btn.slider-dots__btn--active(type="button")
+            span.visually-hidden Слайд 1
+        li.slider-dots__item
+          button.slider-dots__btn(type="button")
+            span.visually-hidden Слайд 2
+        li.slider-dots__item
+          button.slider-dots__btn(type="button")
+            span.visually-hidden Слайд 3
 
     section.main__categories.categories.container
       h2.visually-hidden Категории товаров
@@ -164,9 +167,9 @@ block content
             p Еженедельный дайджест с обзорами новинок, <br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
         form.subscribe__form(action="https://echo.htmlacademy.ru/" method="post")
           p.subscribe__form-wrapper
-            label.subscribe__field.field
+            label.subscribe__field
               span.visually-hidden Ваш e-mail
-              input.field__input(type="email" name="email" placeholder="Ваш e-mail" required)
+              input.subscribe__input(type="email" name="email" placeholder="Ваш e-mail" required)
             button.subscribe__btn.font-raleway(type="submit") Подписаться
           span.subscribe__message Это бесплатно
 
