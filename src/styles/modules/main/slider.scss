@@ -1,13 +1,19 @@
 // slider
 .slider {
   position: relative;
-  margin-bottom: 65px;
+  margin-bottom: 70px;
 
   &__item {
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(to bottom, $yellow 150px, $white 150px);
     margin-top: -36px;
+  }
+
+  &__left {
+    img {
+      display: block;
+    }
   }
 
   &__right {
@@ -43,7 +49,7 @@
 
   &__button-wrapper {
     position: relative;
-    margin-bottom: 47px;
+    margin-bottom: 48px;
   }
 
   &__button-wrapper a {
@@ -97,59 +103,83 @@
     width: 530px;
     margin-left: 30px;
   }
+}
 
-  &__arrow {
-    width: 20px;
-    height: 60px;
-    background: url('Images/icons/icon-slider-arrow.svg') no-repeat center center;
-  }
+// Slider arrows
+.slider__arrow {
+  width: 20px;
+  height: 60px;
+  background: url('Images/icons/icon-slider-arrow.svg') no-repeat center center;
 
-  &__arrow--next {
+  &--next {
     transform: rotate(180deg);
   }
 
-  &__dots {
-    display: flex;
-    position: absolute;
-    bottom: 178px;
-    right: 0;
+  &:hover {
+    opacity: 0.6;
   }
 
-  &__dot {
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid $violet;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+}
+
+// Slider dots
+.slider-dots {
+  display: flex;
+  position: absolute;
+  bottom: 173px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    margin-right: 20px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__btn {
     display: block;
     width: 12px;
     height: 12px;
     padding: 0;
-    margin-right: 20px;
     border: 2px solid $black;
     border-radius: 50%;
   }
 
-  &__dot:last-child {
+  &__btn:last-child {
     margin-right: 0;
   }
 
-  &__dot--active {
+  &__btn--active {
     background: $black;
   }
 
-  &__arrow:hover,
-  &__dot:hover {
+  &__btn:hover {
     opacity: 0.6;
   }
 
-  &__arrow:active,
-  &__dot:active {
+  &__btn:active {
     opacity: 0.3;
   }
 
-  &__arrow:focus,
-  &__dot:focus {
+  &__btn:focus {
     outline: 2px solid $violet;
   }
 
-  &__arrow:disabled,
-  &__dot:disabled {
+  &__btn:disabled {
     opacity: 0.1;
   }
 }
