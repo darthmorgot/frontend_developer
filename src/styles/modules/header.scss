@@ -13,10 +13,8 @@
   }
 
   &__nav {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
-    z-index: 1;
   }
 }
 
@@ -108,12 +106,10 @@
 
   &__counter {
     display: inline-block;
-    width: 21px;
-    height: 21px;
     position: absolute;
     top: 5px;
-    left: 3px;
-    padding-top: 2px;
+    left: 4px;
+    padding: 2px 6px;
     font-size: 14px;
     line-height: 17px;
     border-radius: 50%;
@@ -226,12 +222,16 @@
 }
 
 .nav {
+  &__wrapper-btn-list {
+    position: relative;
+    z-index: 1;
+  }
+
   &__btn {
     display: flex;
     align-items: center;
     padding: 0;
     width: 293px;
-    height: 50px;
     text-align: left;
     letter-spacing: 0.2em;
   }
@@ -265,53 +265,56 @@
   &__wrapper-list {
     display: none;
     position: absolute;
-    top: 64px;
+    top: 51px;
     width: 1160px;
+    padding-top: 13px;
     margin-left: -60px;
     padding-left: 60px;
     margin-right: -60px;
     padding-right: 60px;
-    padding-bottom: 27px;
+    padding-bottom: 57px;
     background-color: $yellow;
-    z-index: 1;
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 650px;
-    height: 120px;
+    display: grid;
+    grid-template-columns: 252px 212px 212px;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 18px;
     padding: 0;
     margin: 0;
     line-height: 18px;
     list-style: none;
   }
 
-  &__item {
-    width: 200px;
-    margin-bottom: 18px;
+  &__item:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
 
-  &__item--left-column {
-    order: 1;
-    margin-right: 52px;
+  &__item:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
   }
 
-  &__item--middle-column {
-    order: 2;
-    margin-right: 12px;
+  &__item:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
   }
 
-  &__item--right-column {
-    order: 3;
+  &__item:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
   }
 
-  &__list::after {
-    content: "";
-    flex-basis: 100%;
-    width: 0;
-    order: 2;
+  &__item:nth-child(5) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  &__item:nth-child(6) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
   }
 
   &__link {
@@ -344,16 +347,28 @@
     background-color: $black;
   }
 
+// Services list
   &__services {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 44px;
     width: 471px;
+    padding: 0;
+    margin: 0;
     margin-left: auto;
+    list-style: none;
+  }
+
+  &__service-item {
+    padding-top: 15px;
+  }
+
+  &__service-item:nth-child(2) {
+    margin-right: 4px;
   }
 
   &__service-link {
-    padding-top: 15px;
-    margin-right: 43px;
+    display: block;
     text-transform: uppercase;
     letter-spacing: 0.2em;
   }
@@ -382,10 +397,5 @@
     left: 0;
     height: 2px;
     background-color: $black;
-  }
-
-  &__service-link:last-child {
-    margin-right: -6px;
-    padding-left: 6px;
   }
 }
