@@ -119,6 +119,10 @@
     line-height: 30px;
   }
 
+  &__name {
+    letter-spacing: 0.2px;
+  }
+
   &__address {
     font-style: normal;
   }
@@ -126,6 +130,7 @@
   &__phone {
     margin: 0;
     margin-bottom: 30px;
+    letter-spacing: 0.2px;
     text-decoration: underline;
   }
 
