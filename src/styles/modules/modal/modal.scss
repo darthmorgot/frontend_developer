@@ -112,10 +112,6 @@
     background: url('Images/icons/icon-letter.svg') no-repeat center center;
   }
 
-  &__number {
-    width: 180px;
-  }
-
   label {
     display: block;
     margin-bottom: 14px;
@@ -165,10 +161,6 @@
     opacity: 0.3;
   }
 
-  &__number-wrapper {
-    border: 2px solid $light;
-  }
-
 // Info popup
   &__info {
     display: inline-block;
@@ -213,6 +205,16 @@
   }
 
 // Plus-minus buttons
+  &__number {
+    width: 180px;
+  }
+
+  &__number-wrapper {
+    display: flex;
+    justify-content: center;
+    border: 2px solid $light;
+  }
+
   &__input--number {
     width: 60px;
     padding-top: 16px;
@@ -229,8 +231,6 @@
     position: relative;
     width: 58px;
     height: 56px;
-    padding: 0;
-    padding-top: 9px;
     background-color: $light;
   }
 
