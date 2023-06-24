@@ -9,6 +9,7 @@
 
   &__main {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
   }
 
@@ -37,13 +38,16 @@
 }
 
 .header-main {
+  &__user {
+    width: 230px;
+    padding-top: 6px;
+  }
+
   &__auth {
     display: flex;
-    justify-content: space-between;
-    width: 230px;
+    flex-wrap: wrap;
     margin: auto;
     padding: 0;
-    padding-top: 6px;
     list-style: none;
     font-size: 18px;
     line-height: 30px;
@@ -52,7 +56,8 @@
   &__menu {
     position: relative;
     display: flex;
-    margin-left: 24px;
+    flex-wrap: wrap;
+    margin-left: auto;
     padding-top: 5px;
   }
 
@@ -63,11 +68,6 @@
     font-size: 18px;
     line-height: 30px;
     color: $black;
-  }
-
-  &__link:nth-child(2) {
-    margin-right: 0;
-    padding-left: 17px;
   }
 
   &__link:hover {
@@ -82,7 +82,7 @@
     outline: 2px solid $violet;
   }
 
-  &__link--icon-sort::before {
+  &__link--compare::before {
     content: "";
     display: inline-block;
     width: 13px;
@@ -93,7 +93,12 @@
     vertical-align: text-bottom;
   }
 
-  &__link--icon-cart::before {
+  &__link--cart {
+    margin-right: 0;
+    padding-left: 17px;
+  }
+
+  &__link--cart::before {
     content: "";
     display: inline-block;
     width: 16px;
@@ -118,7 +123,16 @@
   }
 }
 
+// Auth list
 .auth-list {
+  &__item {
+    margin-right: 28px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
   &__item:nth-child(1) > &__link::before {
     content: '';
     display: inline-block;
