@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 62px;
-    padding-bottom: 61px;
+    padding-bottom: 46px;
   }
 
   &__logo {
@@ -38,14 +38,16 @@
   width: 444px;
   padding-top: 75px;
 
+// Services list
   &__services {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 32px;
     margin-bottom: 62px;
   }
 
   &__services a {
     position: relative;
-    margin-right: 32px;
     letter-spacing: 0.2em;
     color: $white;
     text-transform: uppercase;
@@ -76,7 +78,6 @@
   &__services a:last-child {
     margin-right: 0;
   }
-
 }
 
 .footer-right {
@@ -89,8 +90,11 @@
   }
 
   &__phone a {
+    display: block;
+    margin-bottom: 5px;
     text-decoration-line: underline;
     color: $white;
+    letter-spacing: 0.15px;
   }
 
   &__phone a:hover {
@@ -126,10 +130,11 @@
   }
 }
 
-
+// Social list
 .social {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 0;
   padding-left: 14px;
   margin: 0;
@@ -139,6 +144,7 @@
     width: 40px;
     height: 40px;
     margin-right: 15px;
+    margin-bottom: 15px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
   }
