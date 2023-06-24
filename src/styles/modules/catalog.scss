@@ -15,8 +15,7 @@
 
   &__breadcrumbs {
     display: flex;
-    justify-content: space-between;
-    width: 429px;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -25,6 +24,10 @@
 
 // Breadcrumbs
 .breadcrumbs {
+  &__item {
+    margin-right: 38px;
+  }
+
   &__link {
     position: relative;
     line-height: 19px;
@@ -75,7 +78,7 @@
 
   &__products {
     width: 840px;
-    padding-bottom: 61px;
+    padding-bottom: 62px;
     background-color: $white;
   }
 }
@@ -117,13 +120,13 @@
 
 // Price select
   &__price {
-    margin-bottom: 52px;
+    margin-bottom: 16px;
   }
 
   &__range {
     position: relative;
     height: 2px;
-    margin-bottom: 14px;
+    margin-bottom: 50px;
     background-color: $grey;
   }
 
@@ -288,7 +291,7 @@
 
   &__mark {
     position: absolute;
-    top: 2px;
+    top: 1px;
     left: 0;
     width: 20px;
     height: 20px;
@@ -322,7 +325,8 @@
 .products {
   &__sort {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     padding-top: 25px;
     padding-left: 40px;
     padding-bottom: 25px;
@@ -330,6 +334,7 @@
     background-color: $light;
 
     span {
+      margin-right: auto;
       font-size: 16px;
       line-height: 19px;
       letter-spacing: 0.2em;
@@ -339,6 +344,7 @@
 
   &__sort-list {
     margin: 0;
+    margin-right: auto;
     padding: 0;
     list-style: none;
   }
@@ -513,7 +519,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.1px;
   }
 
   &__price {
@@ -527,6 +533,7 @@
 // Pagination
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   width: 760px;
   margin-right: 40px;
   margin-left: 40px;
@@ -539,24 +546,9 @@
     align-items: center;
   }
 
-  &__item:first-child {
-    margin-right: 147px;
-  }
-
-  &__item:last-child {
-    margin-left: 145px;
-  }
-
-  &__link {
-    width: 40px;
-    padding: 10px;
-    color: $dark;
-    opacity: 0.3;
-    text-align: center;
-  }
-
-  &__link--current {
-    opacity: 0.6;
+  &__item--margin-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__link:hover {
@@ -597,5 +589,40 @@
   &__link--prev:active,
   &__link--next:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.numbers-page {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+   &__link {
+    width: 40px;
+    padding: 10px;
+    color: $dark;
+    opacity: 0.3;
+    text-align: center;
+  }
+
+  &__link--current {
+    opacity: 0.6;
+  }
+
+  &__link:hover {
+    opacity: 1;
+  }
+
+  &__link:focus {
+    color: rgba(68, 68, 68, 0.3);
+    opacity: 1;
+    outline: 2px solid $violet;
   }
 }
