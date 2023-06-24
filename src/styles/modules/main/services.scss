@@ -63,6 +63,7 @@
   }
 
   &__item {
+    height: 200px;
     padding-top: 12px;
     padding-bottom: 5px;
 
@@ -75,6 +76,7 @@
 
     p {
       margin: 0;
+      margin-bottom: 20px;
       font-size: 18px;
       line-height: 30px;
       color: $dark;
