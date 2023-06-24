@@ -15,8 +15,8 @@ header.header.container
         when 'Home': +auth-list("Войти")
         when 'Catalog': +auth-list("Коля Петухов", "Выйти")
     div.header-main__menu
-      a.header-main__link.header-main__link--icon-sort(href="#") Сравнить
-      a.header-main__link.header-main__link--icon-cart(href="#") Корзина
+      a.header-main__link.header-main__link--compare(href="#") Сравнить
+      a.header-main__link.header-main__link--cart(href="#") Корзина
         span.header-main__counter 2
       include popup-cart
 
