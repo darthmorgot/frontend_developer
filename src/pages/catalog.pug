@@ -145,16 +145,18 @@ block content
           ul.catalog__pagination.pagination
             li.pagination__item
               a.pagination__link.pagination__link--prev.pagination__link--disabled.font-raleway(href="#") Назад
-            li.pagination__item
-              a.pagination__link.pagination__link--current 1
-            li.pagination__item
-              a.pagination__link(href="#") 2
-            li.pagination__item
-              a.pagination__link(href="#") 3
-            li.pagination__item
-              a.pagination__link ...
-            li.pagination__item
-              a.pagination__link(href="#") 15
+            li.pagination__item.pagination__item--margin-auto
+              ul.pagination__numbers-page.numbers-page
+                li.numbers-page__item
+                  a.numbers-page__link.numbers-page__link--current 1
+                li.numbers-page__item
+                  a.numbers-page__link(href="#") 2
+                li.numbers-page__item
+                  a.numbers-page__link(href="#") 3
+                li.numbers-page__item
+                  a.numbers-page__link ...
+                li.numbers-page__item
+                  a.numbers-page__link(href="#") 15
             li.pagination__item
               a.pagination__link.pagination__link--next.font-raleway(href="#") Вперёд
 
