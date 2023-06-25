@@ -1,0 +1,125 @@
+// Products list
+.products {
+  &__sort {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-bottom: 25px;
+    padding-right: 40px;
+    background-color: $light;
+
+    span {
+      margin-right: auto;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__sort-list {
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__sort-item {
+    a {
+      display: block;
+      width: 159px;
+      position: relative;
+      font-size: 18px;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      right: 11px;
+      width: 9px;
+      height: 6px;
+      background: url('Images/icons/icon-arrow-down-slim-alt.svg') no-repeat;
+    }
+
+    a:hover {
+    opacity: 0.6;
+    }
+
+    a:focus {
+      outline: 2px solid $violet;
+    }
+  }
+
+  &__sort-btn {
+    width: 30px;
+    padding: 0;
+    opacity: 0.2;
+  }
+
+  &__sort-btn:hover {
+    opacity: 0.5;
+  }
+
+  &__sort-btn:focus {
+    opacity: 1;
+    outline: 2px solid $violet;
+
+    svg {
+      opacity: 0.2;
+    }
+  }
+
+  &__sort-btn:active {
+    opacity: 1;
+
+    svg {
+      opacity: 1;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    list-style: none;
+  }
+
+  &__item {
+    width: 360px;
+  }
+
+  &__button {
+    width: 760px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 28px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    border: 3px solid $border-grey;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+  }
+
+  &__button:hover {
+    border-color: $black;
+  }
+
+  &__button:active {
+    opacity: 0.3;
+  }
+
+  &__button:focus {
+    outline: 2px solid $violet;
+  }
+}

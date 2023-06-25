@@ -1,0 +1,82 @@
+// Product card
+.product {
+  position: relative;
+  margin-bottom: 41px;
+  padding-bottom: 3px;
+
+  &:hover &__img-wrapper {
+    border-color: #000;
+  }
+
+  &:hover.new::after,
+  &:hover img,
+  &:hover &__title {
+    opacity: 0.5;
+  }
+
+  &:hover &__btn-wrapper {
+    display: block;
+  }
+
+  &:focus {
+    outline: 2px solid $violet;
+  }
+
+  &:focus-within &__btn-wrapper {
+    display: block;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    margin-bottom: 32px;
+    border: 1px solid transparent;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__btn-wrapper {
+    display: none;
+  }
+
+  &__btn {
+    position: absolute;
+    width: 220px;
+    letter-spacing: 0.2em;
+    z-index: 1;
+    text-align: center;
+  }
+
+  &__btn,
+  &__btn + .button-background {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__btn:hover + .button-background {
+    top: 50%;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    width: 222px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+  }
+
+  &__price {
+    padding-top: 1px;
+    font-size: 18px;
+    line-height: 21px;
+    color: $dark;
+  }
+}
