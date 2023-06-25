@@ -26,12 +26,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 41px;
-  }
 
-  &__title h2 {
-    margin: 0;
-    font-size: 50px;
-    line-height: 50px;
+    h2 {
+      margin: 0;
+      font-size: 50px;
+      line-height: 50px;
+    }
   }
 
   &__close {
@@ -72,17 +72,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 37px;
-  }
 
-  &__wrapper div {
-    margin: 0;
-    margin-bottom: 41px;
-    position: relative;
-  }
+    div {
+      margin: 0;
+      margin-bottom: 41px;
+      position: relative;
+    }
 
-  &__wrapper div:nth-child(3),
-  &__wrapper div:nth-child(4) {
-    margin-bottom: 0;
+    div:nth-child(3),
+    div:nth-child(4) {
+      margin-bottom: 0;
+    }
   }
 
   &__name,
