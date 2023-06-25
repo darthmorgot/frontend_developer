@@ -43,32 +43,46 @@
     outline: 2px solid $violet;
   }
 
-  &__link span {
-    align-self: start;
+  &__link {
+    span {
+      align-self: start;
+    }
   }
 
-  &__link--vr-mb img {
-    margin-bottom: 90px;
+  &__link--vr-mb {
+    img {
+      margin-bottom: 90px;
+    }
   }
 
-  &__link--mono-selfy img {
-    margin-bottom: 48px;
+  &__link--mono-selfy-mb {
+    img {
+      margin-bottom: 48px;
+    }
   }
 
-  &__link--action-cam img {
-    margin-bottom: 92px;
+  &__link--action-cam-mb {
+    img {
+      margin-bottom: 92px;
+    }
   }
 
-  &__link--fitness-bracelet img {
-    margin-bottom: 93px;
+  &__link--fitness-bracelet-mb {
+    img {
+      margin-bottom: 93px;
+    }
   }
 
-  &__link--smart-watch img {
-    margin-bottom: 91px;
+  &__link--smart-watch-mb {
+    img {
+      margin-bottom: 91px;
+    }
   }
 
-  &__link--quadrocopter img {
-    margin-bottom: 91px;
+  &__link--quadrocopter-mb {
+    img {
+      margin-bottom: 91px;
+    }
   }
 
   &__title {
