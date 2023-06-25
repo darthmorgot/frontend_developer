@@ -54,20 +54,22 @@
     letter-spacing: -0.02em;
   }
 
-  &__list li {
-    margin-bottom: 19px;
-  }
+  &__list {
+    li {
+      margin-bottom: 19px;
+    }
 
-  &__list li::before {
-    content: "";
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin-right: 26px;
-    margin-left: 2px;
-    border-radius: 50%;
-    background-color: $yellow-hover;
-    vertical-align: middle;
+    li::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 26px;
+      margin-left: 2px;
+      border-radius: 50%;
+      background-color: $yellow-hover;
+      vertical-align: middle;
+    }
   }
 
   &__btn-wrapper {
