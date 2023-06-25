@@ -6,8 +6,7 @@ html(lang="ru")
   head
     meta(charset="UTF-8")
     title #{title}
-    link(rel="icon" href=require('Images/favicons/favicon.ico'))
-    link(rel="icon" type="image/png" href=require('Images/favicons/favicon.png'))
+    link(rel="icon" type="image/png" href=require('Images/favicons/favicon.png') sizes="32x32")
     link(href=require('../styles/styles.scss') rel='stylesheet')
   body
     include includes/header
