@@ -4,10 +4,7 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    padding-top: 25px;
-    padding-left: 40px;
-    padding-bottom: 25px;
-    padding-right: 40px;
+    padding: 25px 40px;
     background-color: $light;
 
     span {
@@ -41,11 +38,11 @@
       right: 11px;
       width: 9px;
       height: 6px;
-      background: url('Images/icons/icon-arrow-down-slim-alt.svg') no-repeat;
+      background: url("Images/icons/icon-arrow-down-slim-alt.svg") no-repeat;
     }
 
     a:hover {
-    opacity: 0.6;
+      opacity: 0.6;
     }
 
     a:focus {

@@ -30,10 +30,7 @@
     display: flex;
     justify-content: space-between;
     grid-column: 1 / -1;
-    padding-top: 11px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 13px;
+    padding: 11px 20px 13px;
 
     p {
       margin: 0;
@@ -57,7 +54,7 @@
   }
 
   &__btn:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0 0 0 / 30%);
     background-color: $yellow;
   }
 }

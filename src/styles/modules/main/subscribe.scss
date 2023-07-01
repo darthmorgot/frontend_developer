@@ -51,10 +51,7 @@
 
   &__input {
     width: 557px;
-    padding-top: 12px;
-    padding-bottom: 10px;
-    padding-right: 18px;
-    padding-left: 18px;
+    padding: 12px 18px 10px;
     font-size: 18px;
     line-height: 30px;
     color: $dark;
@@ -99,7 +96,7 @@
   }
 
   &__btn:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255 255 255 / 30%);
     border-color: $button-border-grey;
   }
 
@@ -122,6 +119,6 @@
     width: 16px;
     height: 12px;
     margin-right: 16px;
-    background: url('Images/icons/icon-tick-green.svg') no-repeat center center;
+    background: url("Images/icons/icon-tick-green.svg") no-repeat center center;
   }
 }

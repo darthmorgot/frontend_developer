@@ -1,6 +1,6 @@
 // header
 .header {
-  padding: 17px 60px 23px 60px;
+  padding: 17px 60px 23px;
   background-image: linear-gradient(to bottom, $white 40px, $yellow 40px);
 
   &__top {
@@ -89,7 +89,7 @@
     height: 21px;
     margin-right: 11px;
     margin-left: 1px;
-    background: url('Images/icons/icon-sort.svg') no-repeat center center;
+    background: url("Images/icons/icon-sort.svg") no-repeat center center;
     vertical-align: text-bottom;
   }
 
@@ -105,7 +105,7 @@
     height: 25px;
     margin-right: 11px;
     margin-left: 1px;
-    background: url('Images/icons/icon-cart.svg') no-repeat center center;
+    background: url("Images/icons/icon-cart.svg") no-repeat center center;
     vertical-align: text-bottom;
   }
 
@@ -134,12 +134,12 @@
   }
 
   &__item:nth-child(1) > &__link::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 14px;
     height: 13px;
     margin-right: 12px;
-    background: url('Images/icons/icon-login.svg') no-repeat center center;
+    background: url("Images/icons/icon-login.svg") no-repeat center center;
   }
 
   &__item:nth-child(2) a {
@@ -171,14 +171,11 @@
 
   &__input {
     width: 357px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 45px;
-    padding-right: 10px;
+    padding: 6px 10px 6px 45px;
     line-height: 20px;
     border: 2px solid $black;
     border-right: none;
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 50px 0 0 50px;
     background-color: $yellow;
   }
 
@@ -203,7 +200,7 @@
     left: 16px;
     width: 16px;
     height: 16px;
-    background: url('Images/icons/icon-search.svg') no-repeat;
+    background: url("Images/icons/icon-search.svg") no-repeat;
   }
 
   &__btn {
@@ -212,7 +209,7 @@
     padding-bottom: 7px;
     line-height: 20px;
     border: 2px solid $black;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 0 50px 50px 0;
     background-color: $yellow;
     text-transform: none;
   }
@@ -223,7 +220,7 @@
   }
 
   &__btn:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255 255 255 / 30%);
   }
 
   &__btn:focus {
@@ -256,7 +253,7 @@
     width: 50px;
     height: 50px;
     margin-left: 16px;
-    background: url('Images/icons/icon-plus-ellipse.svg') no-repeat right bottom;
+    background: url("Images/icons/icon-plus-ellipse.svg") no-repeat right bottom;
     opacity: 0.3;
   }
 
@@ -269,7 +266,7 @@
   }
 
   &__btn:focus::after {
-    background: url('Images/icons/icon-minus-ellipse.svg') no-repeat right bottom;
+    background: url("Images/icons/icon-minus-ellipse.svg") no-repeat right bottom;
   }
 
   &__wrapper-btn-list:focus-within &__wrapper-list {
@@ -281,12 +278,9 @@
     position: absolute;
     top: 51px;
     width: 1160px;
-    padding-top: 13px;
     margin-left: -60px;
-    padding-left: 60px;
     margin-right: -60px;
-    padding-right: 60px;
-    padding-bottom: 57px;
+    padding: 13px 60px 57px;
     background-color: $yellow;
   }
 
@@ -352,7 +346,7 @@
   }
 
   &__link--current::after {
-    content: '';
+    content: "";
     position: absolute;
     right: 0;
     bottom: 0;
@@ -361,7 +355,7 @@
     background-color: $black;
   }
 
-// Services list
+  // Services list
   &__services {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -404,7 +398,7 @@
   }
 
   &__service-link--current::after {
-    content: '';
+    content: "";
     position: absolute;
     right: 0;
     bottom: 12px;

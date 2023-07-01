@@ -38,7 +38,7 @@
   width: 444px;
   padding-top: 75px;
 
-// Services list
+  // Services list
   &__services {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -146,7 +146,7 @@
     margin-right: 15px;
     margin-bottom: 15px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255 255 255 / 30%);
   }
 
   &__item:last-child {
@@ -174,14 +174,14 @@
   }
 
   &__link--fb {
-    background: url('Images/icons/icon-facebook.svg') no-repeat center center;
+    background: url("Images/icons/icon-facebook.svg") no-repeat center center;
   }
 
   &__link--insta {
-    background: url('Images/icons/icon-instagram.svg') no-repeat center center;
+    background: url("Images/icons/icon-instagram.svg") no-repeat center center;
   }
 
   &__link--twitter {
-    background: url('Images/icons/icon-twitter.svg') no-repeat center center;
+    background: url("Images/icons/icon-twitter.svg") no-repeat center center;
   }
 }

@@ -24,7 +24,7 @@
   }
 
   &__link:focus {
-    color: rgba(68, 68, 68, 0.3);
+    color: rgba(68 68 68 / 30%);
     opacity: 1;
     outline: 2px solid $violet;
   }
@@ -56,7 +56,7 @@
 
   &__link--prev:active,
   &__link--next:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0 0 0 / 30%);
   }
 
   &__link--disabled {
@@ -76,7 +76,7 @@
     align-items: center;
   }
 
-   &__link {
+  &__link {
     width: 40px;
     padding: 10px;
     color: $dark;
@@ -93,7 +93,7 @@
   }
 
   &__link:focus {
-    color: rgba(68, 68, 68, 0.3);
+    color: rgba(68 68 68 / 30%);
     opacity: 1;
     outline: 2px solid $violet;
   }

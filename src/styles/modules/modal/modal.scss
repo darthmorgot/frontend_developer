@@ -7,7 +7,7 @@
   z-index: 10;
   width: 100%;
   height: 100%;
-  background-color: rgba(240, 240, 240, 0.9);
+  background-color: rgba(240 240 240 / 90%);
 }
 
 .modal-close {
@@ -20,7 +20,7 @@
   padding: 63px 70px;
   background-color: $white;
   border: 10px solid $black;
-  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 0 rgba(0 0 0 / 10%);
 
   &__title {
     display: flex;
@@ -98,7 +98,7 @@
     position: absolute;
     top: 58px;
     right: 20px;
-    background: url('Images/icons/icon-login-light.svg') no-repeat center center;
+    background: url("Images/icons/icon-login-light.svg") no-repeat center center;
   }
 
   &__mail::after {
@@ -109,7 +109,7 @@
     position: absolute;
     top: 58px;
     right: 20px;
-    background: url('Images/icons/icon-letter.svg') no-repeat center center;
+    background: url("Images/icons/icon-letter.svg") no-repeat center center;
   }
 
   label {
@@ -161,7 +161,7 @@
     opacity: 0.3;
   }
 
-// Info popup
+  // Info popup
   &__info {
     display: inline-block;
     position: absolute;
@@ -204,7 +204,7 @@
     display: block;
   }
 
-// Plus-minus buttons
+  // Plus-minus buttons
   &__number {
     width: 180px;
   }
@@ -269,7 +269,7 @@
   &__number-minus:active::before,
   &__number-plus:active::before,
   &__number-plus:active::after {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0 0 0 / 30%);
   }
 
   &__number-minus:disabled,
@@ -277,7 +277,7 @@
     opacity: 0.3;
   }
 
-// Submit button
+  // Submit button
   &__submit {
     position: relative;
   }
@@ -294,7 +294,7 @@
     width: 200px;
   }
 
-// Error style
+  // Error style
   &__error-border {
     border: 2px solid $error;
   }
