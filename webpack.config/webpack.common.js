@@ -1,7 +1,7 @@
 const path = require('./paths.js');
 const multipage = require('./webpack.multipage.js');
 
-const pugPlugin = require('./plugins/pug-plugin-plugin.js');
+const pugPlugin = require('./plugins/pug-plugin-module.js');
 
 const htmlPreset = require('./presets/html-preset-common.js');
 const stylePreset = require('./presets/style-preset-common.js');
