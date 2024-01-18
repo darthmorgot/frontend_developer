@@ -269,6 +269,7 @@
     background: url("Images/icons/icon-minus-ellipse.svg") no-repeat right bottom;
   }
 
+  &__wrapper-btn-list:hover &__wrapper-list,
   &__wrapper-btn-list:focus-within &__wrapper-list {
     display: block;
   }
