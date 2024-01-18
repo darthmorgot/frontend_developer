@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/darthmorgot/frontend_developer"
+    "url": "https://github.com/darthmorgot/frontend_developer"
   },
   "author": "Master",
   "license": "ISC",
@@ -27,7 +27,7 @@
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
     "eslint": "^8.35.0",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.33",
     "postcss-loader": "^7.1.0",
     "postcss-preset-env": "^8.0.1",
     "pug": "^3.0.2",
