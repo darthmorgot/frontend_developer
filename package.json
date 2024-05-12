@@ -1,25 +1,24 @@
 {
   "name": "device",
-  "version": "0.0.1",
   "description": "Training in the profession of a frontend developer",
+  "author": "Master",
+  "version": "1.0.0",
+  "license": "ISC",
+  "private": true,
   "scripts": {
     "dev": "cross-env BUILD_TYPE=development webpack --config webpack.config/webpack.config.js",
     "build": "cross-env BUILD_TYPE=production webpack --config webpack.config/webpack.config.js",
     "start": "cross-env BUILD_TYPE=development webpack serve --config webpack.config/webpack.config.js",
-    "test:lint": "eslint .",
-    "test": "npm run test:lint"
+    "test:lint": "eslint ."
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/darthmorgot/frontend_developer"
   },
-  "author": "Master",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/darthmorgot/frontend_developer/issues"
   },
   "homepage": "https://github.com/darthmorgot/frontend_developer#readme",
-  "private": true,
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
